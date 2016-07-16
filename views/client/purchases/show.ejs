@@ -1,0 +1,123 @@
+<% include ../include/header %>
+
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+    <section id="bodySection">
+
+
+
+    <% for(var i=0;i<results.rows.length;i++) { %>
+    <div class="showItemBox">
+        <header><h3>purchases </h3></header>
+        <section>
+
+            
+            
+            <div><label>id : </label><%=results.rows[i].id;%></div>
+            
+
+            
+            
+            <div><label>users_id : </label><%=results.rows[i].users_id;%></div>
+            
+
+            
+            
+            <div><label>goods_id : </label><%=results.rows[i].goods_id;%></div>
+            
+
+            
+            
+            <div><label>offers_id : </label><%=results.rows[i].offers_id;%></div>
+            
+
+            
+            
+            <div><label>public_price : </label><%=results.rows[i].public_price;%></div>
+            
+
+            
+            
+            <div><label>last_raise : </label><%=results.rows[i].last_raise;%></div>
+            
+
+            
+            
+            <div><label>installment_gain : </label><%=results.rows[i].installment_gain;%></div>
+            
+
+            
+                        <div><label>installment_unit : </label> <%=arrays('purchases','installment_unit',results.rows[i].installment_unit);%></div>
+            
+
+            
+            
+            <div><label>installment_max_repeat : </label><%=results.rows[i].installment_max_repeat;%></div>
+            
+
+            
+                        <div><label>status : </label> <%=arrays('purchases','status',results.rows[i].status);%></div>
+            
+
+            
+            
+            <div><label>earnest : </label><%=results.rows[i].earnest;%></div>
+            
+
+            
+            
+            <div><label>payments_id : </label><%=results.rows[i].payments_id;%></div>
+            
+
+                    </section>
+        <footer>
+            <ul>
+            <li><a href="/client/purchases/<%=results.rows[i].id;%>">show</a></li>
+                <li><a href="/client/purchases/<%=results.rows[i].id;%>/edit">edit</a></li>
+                <li><a href="/client/purchases/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                            <li> <a href="/client/purchases/<%=results.rows[i].id;%>/users">users</a></li>
+
+            
+                            <li> <a href="/client/purchases/<%=results.rows[i].id;%>/goods">goods</a></li>
+
+            
+                            <li> <a href="/client/purchases/<%=results.rows[i].id;%>/offers">offers</a></li>
+
+            
+                            <li> <a href="/client/purchases/<%=results.rows[i].id;%>/payments">payments</a></li>
+
+            
+                            <li> <a href="/client/purchases/<%=results.rows[i].id;%>/purchases_offers">purchases_offers</a></li>
+
+                            <li> <a href="/client/purchases_offers/create?purchases_id=<%=results.rows[i].id;%>"> add purchases_offers</a></li>
+
+            
+                            <li> <a href="/client/purchases/<%=results.rows[i].id;%>/payments">payments</a></li>
+
+                            <li> <a href="/client/payments/create?purchases_id=<%=results.rows[i].id;%>"> add payments</a></li>
+
+            
+                        </ul>
+
+        </footer>
+    </div>
+
+    <% } %>
+
+</section>
+
+
+
+<% include ../include/footer %>

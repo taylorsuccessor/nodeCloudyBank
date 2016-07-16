@@ -1,0 +1,1 @@
+module.exports=function(res,req,next){console.log('purchases_offers');next();}

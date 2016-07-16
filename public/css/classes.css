@@ -1,0 +1,42 @@
+
+.table { display: table;clear:both; }
+.tr { display: table-row; }
+.thead { display: table-header-group; }
+.tbody { display: table-row-group; }
+.tfoot { display: table-footer-group; }
+
+.td, .th { display: table-cell;padding:3px 5px;border:1px solid #cccccc; }
+
+.table .td label{display:none;}
+
+.table .td p{display:block;margin:0px;padding:0px;width:100%;}
+
+@media screen and (max-width: 800px){
+    .table .thead{display:none;}
+    .table ,.table .tbody,.table .tfoot{display:block;}
+    .table .tr{margin:5px;display:block;border:2px solid #cccccc;}
+    .table .tr td:nth-child(odd){background:#0ff;}
+    .table .tr td:nth-child(even){background:#ff0;}
+    .table .td{display:block;width:auto; overflow: auto}
+    .table .td label{display:inline-block;width:35%;float:left;text-align:left;}
+    .table .td p{display:block;margin:0px;padding:0px;width:65%;float:right;text-align:left;}
+
+
+}
+
+
+/*________________________________________________________END_____mainMenu*/
+.mainMenu{}
+.mainMenu li {background:#fff;display:block;}
+.mainMenu li a{background:#fff;display:block;padding:3px 5px; text-align: center;}
+.mainMenu>li{float:left;}
+.mainMenu .subMenu{z-index:10;display:none;width:100px;height:0px; overflow:visible;}
+.mainMenu ul{width:150%;padding:0px;margin:0px;
+    position: relative;}
+
+.mainMenu>li:hover .subMenu, .subMenu:hover{display:block;}
+
+
+.mainMenu>li a{background-color:#fff;}
+.mainMenu .subMenu a{background-color:#fff;}
+/*_____________________________________________________________mainMenu*/

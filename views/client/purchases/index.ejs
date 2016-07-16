@@ -1,0 +1,375 @@
+<% include ../include/header %>
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الد�?عة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+        <section id="searchForm" class="<%=(search.searchButton != undefined)? '':'mini';%>">
+            <form action="" method="get">
+                <button type="submit" value="search"  class="searchButton" name="searchButton">search</button>
+
+
+
+
+
+
+
+                
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="id" value="<%=search.id;%>" placeholder="id" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="users_id" value="<%=search.users_id;%>" placeholder="users_id" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="goods_id" value="<%=search.goods_id;%>" placeholder="goods_id" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="offers_id" value="<%=search.offers_id;%>" placeholder="offers_id" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="public_price" value="<%=search.public_price;%>" placeholder="public_price" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="last_raise" value="<%=search.last_raise;%>" placeholder="last_raise" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="installment_gain" value="<%=search.installment_gain;%>" placeholder="installment_gain" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchOptionsContainer">
+                            <ul>
+                                <li> <label><input type="checkbox" name="installment_unit" value="-1" <%=checkboxCheck(search.installment_unit,'-1');%> ><i class="fa fa-circle"></i>All</label></li>
+
+                                                                    <li> <label ><input type="checkbox"  name="installment_unit" value="0"  <%=checkboxCheck(search.installment_unit,'0');%> >  <i class="fa fa-circle"></i>month</label></li>
+                                                                    <li> <label ><input type="checkbox"  name="installment_unit" value="1"  <%=checkboxCheck(search.installment_unit,'1');%> >  <i class="fa fa-circle"></i>week</label></li>
+                                                                    <li> <label ><input type="checkbox"  name="installment_unit" value="2"  <%=checkboxCheck(search.installment_unit,'2');%> >  <i class="fa fa-circle"></i>year</label></li>
+                                                                    <li> <label ><input type="checkbox"  name="installment_unit" value="3"  <%=checkboxCheck(search.installment_unit,'3');%> >  <i class="fa fa-circle"></i>day</label></li>
+                                
+                            </ul>
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="installment_max_repeat" value="<%=search.installment_max_repeat;%>" placeholder="installment_max_repeat" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchOptionsContainer">
+                            <ul>
+                                <li> <label><input type="checkbox" name="status" value="-1" <%=checkboxCheck(search.status,'-1');%> ><i class="fa fa-circle"></i>All</label></li>
+
+                                                                    <li> <label ><input type="checkbox"  name="status" value="0"  <%=checkboxCheck(search.status,'0');%> >  <i class="fa fa-circle"></i>requested</label></li>
+                                                                    <li> <label ><input type="checkbox"  name="status" value="1"  <%=checkboxCheck(search.status,'1');%> >  <i class="fa fa-circle"></i>pended</label></li>
+                                                                    <li> <label ><input type="checkbox"  name="status" value="2"  <%=checkboxCheck(search.status,'2');%> >  <i class="fa fa-circle"></i>agree</label></li>
+                                                                    <li> <label ><input type="checkbox"  name="status" value="3"  <%=checkboxCheck(search.status,'3');%> >  <i class="fa fa-circle"></i>paid_earnest</label></li>
+                                
+                            </ul>
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="earnest" value="<%=search.earnest;%>" placeholder="earnest" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="payments_id" value="<%=search.payments_id;%>" placeholder="payments_id" >
+                        </div>
+
+
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </form>
+            <i class=" searchIcon fa fa-search"></i>
+        </section>
+
+
+
+
+
+
+<section id="bodySection">
+
+
+
+
+    <div class="miniMenuContainer aboveTableMiniMenu">
+        <i class="menuIcon fa fa-list"></i>
+        <div class="menuZeroContainer">
+            <ul>
+                <li><a href="/client/purchases/create">add purchases</a></li>
+
+                                <li><a href="/client/purchases/users">purchases users</a></li>
+                                <li><a href="/client/purchases/goods">purchases goods</a></li>
+                                <li><a href="/client/purchases/offers">purchases offers</a></li>
+                                <li><a href="/client/purchases/payments">purchases payments</a></li>
+                                <li><a href="/client/purchases/purchases_offers">purchases purchases_offers</a></li>
+                                <li><a href="/client/purchases/payments">purchases payments</a></li>
+                
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+   <div class="primary_table_div info" >
+<div class="table">
+
+
+   <div class="thead">
+      <div class="tr">
+
+         
+         <div class="th"><%-orderByLink('id',search);%></div>
+         
+         <div class="th"><%-orderByLink('users_id',search);%></div>
+         
+         <div class="th"><%-orderByLink('goods_id',search);%></div>
+         
+         <div class="th"><%-orderByLink('offers_id',search);%></div>
+         
+         <div class="th"><%-orderByLink('public_price',search);%></div>
+         
+         <div class="th"><%-orderByLink('last_raise',search);%></div>
+         
+         <div class="th"><%-orderByLink('installment_gain',search);%></div>
+         
+         <div class="th"><%-orderByLink('installment_unit',search);%></div>
+         
+         <div class="th"><%-orderByLink('installment_max_repeat',search);%></div>
+         
+         <div class="th"><%-orderByLink('status',search);%></div>
+         
+         <div class="th"><%-orderByLink('earnest',search);%></div>
+         
+         <div class="th"><%-orderByLink('payments_id',search);%></div>
+                  <div class="th">Actions</div>
+
+      </div>
+   </div>
+
+
+   <div class="tbody">
+
+
+      <% for(var i=0;i<results.rows.length;i++) { %>
+      <div class="tr">
+         
+       
+          <div class="td"><label>id : </label><p><%=results.rows[i].id;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>users_id : </label><p><%=results.rows[i].users_id;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>goods_id : </label><p><%=results.rows[i].goods_id;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>offers_id : </label><p><%=results.rows[i].offers_id;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>public_price : </label><p><%=results.rows[i].public_price;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>last_raise : </label><p><%=results.rows[i].last_raise;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>installment_gain : </label><p><%=results.rows[i].installment_gain;%></p></div>
+
+          
+
+         
+                 <div class="td"><label>installment_unit : </label><p> <%=arrays('purchases','installment_unit',results.rows[i].installment_unit);%></p></div>
+       
+
+         
+       
+          <div class="td"><label>installment_max_repeat : </label><p><%=results.rows[i].installment_max_repeat;%></p></div>
+
+          
+
+         
+                 <div class="td"><label>status : </label><p> <%=arrays('purchases','status',results.rows[i].status);%></p></div>
+       
+
+         
+       
+          <div class="td"><label>earnest : </label><p><%=results.rows[i].earnest;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>payments_id : </label><p><%=results.rows[i].payments_id;%></p></div>
+
+          
+
+                  <div class="td">
+            <ul>
+              <li> <a href="/client/purchases/<%=results.rows[i].id;%>">show</a></li>
+              <li> <a href="/client/purchases/<%=results.rows[i].id;%>/edit">edit</a></li>
+               <li> <a href="/client/purchases/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                              <li><a href="/client/purchases/<%=results.rows[i].id;%>/users">users</a>
+               </li>
+               
+                              <li><a href="/client/purchases/<%=results.rows[i].id;%>/goods">goods</a>
+               </li>
+               
+                              <li><a href="/client/purchases/<%=results.rows[i].id;%>/offers">offers</a>
+               </li>
+               
+                              <li><a href="/client/purchases/<%=results.rows[i].id;%>/payments">payments</a>
+               </li>
+               
+                              <li><a href="/client/purchases/<%=results.rows[i].id;%>/purchases_offers">purchases_offers</a>
+               </li>
+                              <li><a href="/client/purchases_offers/create?purchases_id=<%=results.rows[i].id;%>"> add purchases_offers</a>
+               </li>
+               
+                              <li><a href="/client/purchases/<%=results.rows[i].id;%>/payments">payments</a>
+               </li>
+                              <li><a href="/client/payments/create?purchases_id=<%=results.rows[i].id;%>"> add payments</a>
+               </li>
+               
+                           </ul>
+
+         </div>
+      </div>
+<% } %>
+
+
+   </div>
+
+
+
+   <div class="tfoot">
+      <div class="tr">
+         <div class="td">
+
+
+         </div>
+
+      </div>
+
+   </div>
+
+
+
+</div>
+
+       <div class="tableFooter">
+           <%-createPagination(results.total,search);%>
+       </div>
+</div>
+
+
+
+
+</section>
+
+
+
+<% include ../include/footer %>
+

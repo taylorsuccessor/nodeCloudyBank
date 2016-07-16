@@ -1,0 +1,87 @@
+<% include ../include/header %>
+
+<section id="center_page_section">
+  <div class="centerPageHeader" id="center_body_header" >
+    أدخل معلومات الدفعة
+
+  </div><!-- #center_body_header -->
+
+  <div class="block_body"  id="center_body_body">
+
+
+
+
+  <form method="post" >
+<div class="form-group">
+                    <label>users_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="users_id"  value="<%=values.users_id;%>"  placeholder="users_id"id="users_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>name</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="name"  value="<%=values.name;%>"  placeholder="name"id="name"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>file_type</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="file_type"  value="<%=values.file_type;%>"  placeholder="file_type"id="file_type"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>file_path</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="file_path"  value="<%=values.file_path;%>"  placeholder="file_path"id="file_path"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>credibility</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="credibility"  value="<%=values.credibility;%>"  placeholder="credibility"id="credibility"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><label>extra_details</label>
+                 <div class="form-group">
+
+
+                      <textarea type="textarea" class="form-control  input-sm" name="extra_details"  placeholder="extra_details"id="extra_details"  style="height:150px;" ><%=values.extra_details;%> </textarea>
+
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>date</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-calendar"></i>
+                      </div>
+                      
+                      <input type="date_pick" class="form-control  input-sm" name="date"  value="<%=values.date;%>"  placeholder="date"id="date"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="box-footer"></div>
+  <input type="submit" value="create">
+</form>
+
+
+<script>$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("[data-mask]").inputmask();</script>
+<% include ../include/footer %>

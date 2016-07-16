@@ -1,0 +1,112 @@
+<% include ../include/header %>
+
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+    <section id="bodySection">
+
+
+
+    <% for(var i=0;i<results.rows.length;i++) { %>
+    <div class="showItemBox">
+        <header><h3>money_transfer </h3></header>
+        <section>
+
+            
+            
+            <div><label>id : </label><%=results.rows[i].id;%></div>
+            
+
+            
+            
+            <div><label>users_id : </label><%=results.rows[i].users_id;%></div>
+            
+
+            
+            
+            <div><label>to_users_id : </label><%=results.rows[i].to_users_id;%></div>
+            
+
+            
+            
+            <div><label>to_user_phone : </label><%=results.rows[i].to_user_phone;%></div>
+            
+
+            
+                        <div><label>type : </label> <%=arrays('money_transfer','type',results.rows[i].type);%></div>
+            
+
+            
+            
+            <div><label>amount : </label><%=results.rows[i].amount;%></div>
+            
+
+            
+            
+            <div><label>bank_name : </label><%=results.rows[i].bank_name;%></div>
+            
+
+            
+            
+            <div><label>account_number : </label><%=results.rows[i].account_number;%></div>
+            
+
+            
+            
+            <div><label>account_holder : </label><%=results.rows[i].account_holder;%></div>
+            
+
+            
+            
+            <div><label>exchange_name : </label><%=results.rows[i].exchange_name;%></div>
+            
+
+            
+            
+            <div><label>exchange_address : </label><%=results.rows[i].exchange_address;%></div>
+            
+
+            
+            
+            <div><label>extra_details : </label><%=results.rows[i].extra_details;%></div>
+            
+
+            
+                        <div><label>status : </label> <%=arrays('money_transfer','status',results.rows[i].status);%></div>
+            
+
+                    </section>
+        <footer>
+            <ul>
+            <li><a href="/admin/money_transfer/<%=results.rows[i].id;%>">show</a></li>
+                <li><a href="/admin/money_transfer/<%=results.rows[i].id;%>/edit">edit</a></li>
+                <li><a href="/admin/money_transfer/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                            <li> <a href="/admin/money_transfer/<%=results.rows[i].id;%>/users">users</a></li>
+
+            
+                            <li> <a href="/admin/money_transfer/<%=results.rows[i].id;%>/users">users</a></li>
+
+            
+                        </ul>
+
+        </footer>
+    </div>
+
+    <% } %>
+
+</section>
+
+
+
+<% include ../include/footer %>

@@ -1,0 +1,1 @@
+module.exports=function(res,req,next){console.log('goods_img');next();}

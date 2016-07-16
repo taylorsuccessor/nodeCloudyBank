@@ -1,0 +1,1 @@
+module.exports=function(res,req,next){console.log('financial_movement');next();}

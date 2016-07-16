@@ -1,0 +1,17 @@
+/*__________________________tab*/
+.bage_tab_div{
+    width:33.3333%;
+    border-right: 1px solid #fff;
+    margin-right: -1px;
+}
+/*________________________END__tab*/
+
+/*______________________form*/
+#transfer_person_phone_number_input,#person_transfer_amount_input,#person_recever_name_input,#person_transfer_password_input
+,#current_account_balance,.half_row{ display: block;width:50%;margin:2%;}
+
+#current_account_balance{
+    text-align: center;
+    background-color: #DFDEE0;
+}
+/*__________END____________form*/

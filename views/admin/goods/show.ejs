@@ -1,0 +1,155 @@
+<% include ../include/header %>
+
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+    <section id="bodySection">
+
+
+
+    <% for(var i=0;i<results.rows.length;i++) { %>
+    <div class="showItemBox">
+        <header><h3>goods </h3></header>
+        <section>
+
+            
+            
+            <div><label>id : </label><%=results.rows[i].id;%></div>
+            
+
+            
+            
+            <div><label>category : </label><%=results.rows[i].category;%></div>
+            
+
+            
+            
+            <div><label>users_id : </label><%=results.rows[i].users_id;%></div>
+            
+
+            
+            
+            <div><label>user_name : </label><%=results.rows[i].user_name;%></div>
+            
+
+            
+            
+            <div><label>title : </label><%=results.rows[i].title;%></div>
+            
+
+            
+            
+            <div><label>img : </label><%=results.rows[i].img;%></div>
+            
+
+            
+            
+            <div><label>description : </label><%=results.rows[i].description;%></div>
+            
+
+            
+            
+            <div><label>public_price : </label><%=results.rows[i].public_price;%></div>
+            
+
+            
+            
+            <div><label>last_raise : </label><%=results.rows[i].last_raise;%></div>
+            
+
+            
+            
+            <div><label>installment_gain : </label><%=results.rows[i].installment_gain;%></div>
+            
+
+            
+                        <div><label>installment_unit : </label> <%=arrays('goods','installment_unit',results.rows[i].installment_unit);%></div>
+            
+
+            
+            
+            <div><label>installment_max_repeat : </label><%=results.rows[i].installment_max_repeat;%></div>
+            
+
+            
+            
+            <div><label>img_number : </label><%=results.rows[i].img_number;%></div>
+            
+
+            
+            
+            <div><label>comments_number : </label><%=results.rows[i].comments_number;%></div>
+            
+
+            
+            
+            <div><label>earnest : </label><%=results.rows[i].earnest;%></div>
+            
+
+            
+            
+            <div><label>available_quantity : </label><%=results.rows[i].available_quantity;%></div>
+            
+
+                    </section>
+        <footer>
+            <ul>
+            <li><a href="/admin/goods/<%=results.rows[i].id;%>">show</a></li>
+                <li><a href="/admin/goods/<%=results.rows[i].id;%>/edit">edit</a></li>
+                <li><a href="/admin/goods/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                            <li> <a href="/admin/goods/<%=results.rows[i].id;%>/users">users</a></li>
+
+            
+                            <li> <a href="/admin/goods/<%=results.rows[i].id;%>/offers">offers</a></li>
+
+                            <li> <a href="/admin/offers/create?goods_id=<%=results.rows[i].id;%>"> add offers</a></li>
+
+            
+                            <li> <a href="/admin/goods/<%=results.rows[i].id;%>/goods_img">goods_img</a></li>
+
+                            <li> <a href="/admin/goods_img/create?goods_id=<%=results.rows[i].id;%>"> add goods_img</a></li>
+
+            
+                            <li> <a href="/admin/goods/<%=results.rows[i].id;%>/comments">comments</a></li>
+
+                            <li> <a href="/admin/comments/create?goods_id=<%=results.rows[i].id;%>"> add comments</a></li>
+
+            
+                            <li> <a href="/admin/goods/<%=results.rows[i].id;%>/raises">raises</a></li>
+
+                            <li> <a href="/admin/raises/create?goods_id=<%=results.rows[i].id;%>"> add raises</a></li>
+
+            
+                            <li> <a href="/admin/goods/<%=results.rows[i].id;%>/purchases">purchases</a></li>
+
+                            <li> <a href="/admin/purchases/create?goods_id=<%=results.rows[i].id;%>"> add purchases</a></li>
+
+            
+                            <li> <a href="/admin/goods/<%=results.rows[i].id;%>/payments">payments</a></li>
+
+                            <li> <a href="/admin/payments/create?goods_id=<%=results.rows[i].id;%>"> add payments</a></li>
+
+            
+                        </ul>
+
+        </footer>
+    </div>
+
+    <% } %>
+
+</section>
+
+
+
+<% include ../include/footer %>

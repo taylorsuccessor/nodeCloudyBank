@@ -1,0 +1,138 @@
+<% include ../include/header %>
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+
+    <form method="post" >
+    <div class="form-group">
+                    <label>users_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="users_id"  value="<%=values.users_id;%>"  placeholder="users_id"id="users_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>home_address</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="home_address"  value="<%=values.home_address;%>"  placeholder="home_address"id="home_address"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>job</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="job"  value="<%=values.job;%>"  placeholder="job"id="job"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>job_address</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="job_address"  value="<%=values.job_address;%>"  placeholder="job_address"id="job_address"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>other_phones</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-phone"></i>
+                      </div>
+                      
+                      <input type="phone" class="form-control  input-sm" name="other_phones"  value="<%=values.other_phones;%>"  placeholder="other_phones"id="other_phones"  data-inputmask='"mask": "(999) 999-99999999"'  data-mask   />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>coordinates</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="coordinates"  value="<%=values.coordinates;%>"  placeholder="coordinates"id="coordinates"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>national_number</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="national_number"  value="<%=values.national_number;%>"  placeholder="national_number"id="national_number"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>sallary</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="number" class="form-control  input-sm" name="sallary"  value="<%=values.sallary;%>"  placeholder="sallary"id="sallary"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>bank_name</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="bank_name"  value="<%=values.bank_name;%>"  placeholder="bank_name"id="bank_name"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>bank_account</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="bank_account"  value="<%=values.bank_account;%>"  placeholder="bank_account"id="bank_account"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>security_number</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="security_number"  value="<%=values.security_number;%>"  placeholder="security_number"id="security_number"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><label>extra_details</label>
+                 <div class="form-group">
+
+
+                      <textarea type="textarea" class="form-control  input-sm" name="extra_details"  placeholder="extra_details"id="extra_details"  style="height:150px;" ><%=values.extra_details;%> </textarea>
+
+                  </div><!-- /.form group -->    <div class="box-footer"></div>
+    <input type="submit" value="create">
+</form>
+
+<script>$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("[data-mask]").inputmask();</script>
+<% include ../include/footer %>

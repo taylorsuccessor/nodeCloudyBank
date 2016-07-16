@@ -1,0 +1,116 @@
+/*____________________search*/
+//.search_form{
+//  margin: 0px 2%;
+//  /* padding:0px 2%; */
+//  background: #EFEDF1;
+//}
+//.search_one_all_div{
+//  margin: 5px 0.5%;
+//  DISPLAY: inline-block;
+//  border-top: 5px solid $mainColor;
+//  padding: 5px 0px;
+//  background: #DEDEDE;
+//}
+//.search_one_all_div:hover{
+//
+//  border-top: 5px solid #B5D2EF;
+//}
+//.search_one_all_div label{display: inline; display: inline-block;
+//
+//  padding: 5px;  color: #555555;  background-color: #eeeeee;  border: 1px solid #cccccc;  cursor: pointer;/* margin: 0px 1px; */}
+//.search_one_all_div label.checked{
+//
+//  color: $mainColor;  border-color: $mainColor;
+//}
+/*_______________END__search*/
+
+#searchForm{
+  margin: 5px 2%;
+  border:2px solid $liteMainBgColor;
+overflow:auto;
+
+  .searchIcon{
+    float:right;
+padding:3px;
+    color:#ffffff;
+    font-size: 14px;
+  }
+  &.mini{
+
+    float: left;
+    form{display:none;}
+    .searchIcon{display:block;}
+  }
+  form {
+
+    padding:5px 10px;
+
+    .searchButton{
+      background-color: $liteMainColor;
+      border:none;
+      color:#fff;
+      width:100%;
+      font-size: 18px;
+      margin-bottom:5px;
+    }
+
+
+  }
+
+  .searchInputController{
+
+    width:100%;
+    margin: 5px 0px;
+    overflow: auto;
+    label{
+
+    }
+    input{}
+  }
+
+
+  .searchOptionsContainer{
+    display:block;
+    width:100%;
+    margin: 5px 0px;
+    overflow: auto;
+    ul{
+      margin:0px;
+      padding:0px;
+      list-style: none;
+      li{
+        float:left;
+
+        label{
+          display:block;
+          padding: 5px 10px;
+          border:1px solid $liteMainBgColor;
+          color:lighten($liteMainColor, 5%);
+          input{
+            display:none;
+
+          }
+          i{
+            margin: 5px;
+            color:$liteMainBgColor;
+          }
+        }
+        label.active{
+
+          //border:1px solid $liteMainColor;
+          color:$mainColor;
+          background-color: $liteMainBgColor;
+          input{
+
+          }
+          i{
+            color:$liteMainColor;
+          }
+        }
+
+      }
+    }
+  }
+
+
+}

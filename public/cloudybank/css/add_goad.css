@@ -1,0 +1,76 @@
+/*_______________________________center_page_section*/
+#center_page_section{
+
+padding: 0px;
+margin-top: 5px;
+margin-left: 10px;
+background-color: #E0D4E9;
+}
+
+#center_body_header,#center_body_footer_bar{ width: 90%;
+float: right;
+}
+#center_body_footer_bar{
+    margin-bottom:5px;
+}
+#save_goad_button{
+    float:left;
+    width: 10%;
+}
+/*____________________________End___center_page_section*/
+
+/*___________________________add_goad_form*/
+#goad_name_input{
+    float: right;
+    width: 35%;
+    margin: 0px 2%;
+    position: relative;
+    background-color: #fff;
+}
+#goad_type_select{
+    float: right;
+    
+    width: 15%;
+}
+#goad_info_textarea{
+    margin: 2%;  width: 54%;  
+    height: 105px;
+}
+#goad_image_input_div{
+    width: 38%;
+    margin-left: 2%;
+    height: 150px;
+    float: left;
+    border: 1px solid #8DB4DB;
+}
+#goad_image_input{}
+
+#goad_price_input{ width:96%}
+
+#first_payment_input{
+    width: 96%;
+}
+#payment_value_input,#total_pamyment_number_input{
+    width:56%;
+    margin-top:2%;
+}
+#payment_period_select,#total_pamyment_period_select{
+    width: 35.5%;
+    margin-left:0px;
+    
+    margin-top:2%;
+}
+
+#auction_initial_price_input{
+  width:96%;  
+}
+#more_info_textarea{
+    width:96%;
+    margin: 5px 2%;
+}
+
+
+#deliver_all_div{
+  margin-bottom:20px; 
+}
+/*______________________END_____add_goad_form*/

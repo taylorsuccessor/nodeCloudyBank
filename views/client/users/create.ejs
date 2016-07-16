@@ -1,0 +1,81 @@
+<% include ../include/header %>
+
+<section id="center_page_section">
+  <div class="centerPageHeader" id="center_body_header" >
+    أدخل معلومات الدفعة
+
+  </div><!-- #center_body_header -->
+
+  <div class="block_body"  id="center_body_body">
+
+
+
+
+  <form method="post" >
+<div class="form-group">
+                    <label>name</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-user"></i>
+                      </div>
+                      
+                      <input type="name" class="form-control  input-sm" name="name"  value="<%=values.name;%>"  placeholder="name"id="name"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>email</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-envelope"></i>
+                      </div>
+                      
+                      <input type="email" class="form-control  input-sm" name="email"  value="<%=values.email;%>"  placeholder="email"id="email"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>phone</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-phone"></i>
+                      </div>
+                      
+                      <input type="phone" class="form-control  input-sm" name="phone"  value="<%=values.phone;%>"  placeholder="phone"id="phone"  data-inputmask='"mask": "(999) 999-99999999"'  data-mask   />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>password</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-lock"></i>
+                      </div>
+                      
+                      <input type="password" class="form-control  input-sm" name="password"  value="<%=values.password;%>"  placeholder="password"id="password"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>img</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="img"  value="<%=values.img;%>"  placeholder="img"id="img"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>rank</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="rank"  value="<%=values.rank;%>"  placeholder="rank"id="rank"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="box-footer"></div>
+  <input type="submit" value="create">
+</form>
+
+
+<script>$("[data-mask]").inputmask();$("[data-mask]").inputmask();</script>
+<% include ../include/footer %>

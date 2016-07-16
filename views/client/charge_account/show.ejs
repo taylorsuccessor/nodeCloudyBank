@@ -1,0 +1,89 @@
+<% include ../include/header %>
+
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+    <section id="bodySection">
+
+
+
+    <% for(var i=0;i<results.rows.length;i++) { %>
+    <div class="showItemBox">
+        <header><h3>charge_account </h3></header>
+        <section>
+
+            
+            
+            <div><label>id : </label><%=results.rows[i].id;%></div>
+            
+
+            
+            
+            <div><label>users_id : </label><%=results.rows[i].users_id;%></div>
+            
+
+            
+                        <div><label>type : </label> <%=arrays('charge_account','type',results.rows[i].type);%></div>
+            
+
+            
+            
+            <div><label>amount : </label><%=results.rows[i].amount;%></div>
+            
+
+            
+            
+            <div><label>transfer_number : </label><%=results.rows[i].transfer_number;%></div>
+            
+
+            
+            
+            <div><label>charger_name : </label><%=results.rows[i].charger_name;%></div>
+            
+
+            
+            
+            <div><label>exchange_address : </label><%=results.rows[i].exchange_address;%></div>
+            
+
+            
+            
+            <div><label>extra_details : </label><%=results.rows[i].extra_details;%></div>
+            
+
+            
+                        <div><label>status : </label> <%=arrays('charge_account','status',results.rows[i].status);%></div>
+            
+
+                    </section>
+        <footer>
+            <ul>
+            <li><a href="/client/charge_account/<%=results.rows[i].id;%>">show</a></li>
+                <li><a href="/client/charge_account/<%=results.rows[i].id;%>/edit">edit</a></li>
+                <li><a href="/client/charge_account/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                            <li> <a href="/client/charge_account/<%=results.rows[i].id;%>/users">users</a></li>
+
+            
+                        </ul>
+
+        </footer>
+    </div>
+
+    <% } %>
+
+</section>
+
+
+
+<% include ../include/footer %>

@@ -1,0 +1,99 @@
+<% include ../include/header %>
+
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+    <section id="bodySection">
+
+
+
+    <% for(var i=0;i<results.rows.length;i++) { %>
+    <div class="showItemBox">
+        <header><h3>payments </h3></header>
+        <section>
+
+            
+            
+            <div><label>id : </label><%=results.rows[i].id;%></div>
+            
+
+            
+            
+            <div><label>users_id : </label><%=results.rows[i].users_id;%></div>
+            
+
+            
+            
+            <div><label>to_users_id : </label><%=results.rows[i].to_users_id;%></div>
+            
+
+            
+            
+            <div><label>amount : </label><%=results.rows[i].amount;%></div>
+            
+
+            
+            
+            <div><label>purchases_id : </label><%=results.rows[i].purchases_id;%></div>
+            
+
+            
+            
+            <div><label>goods_id : </label><%=results.rows[i].goods_id;%></div>
+            
+
+            
+                        <div><label>status : </label> <%=arrays('payments','status',results.rows[i].status);%></div>
+            
+
+            
+            
+            <div><label>extra_info : </label><%=results.rows[i].extra_info;%></div>
+            
+
+                    </section>
+        <footer>
+            <ul>
+            <li><a href="/admin/payments/<%=results.rows[i].id;%>">show</a></li>
+                <li><a href="/admin/payments/<%=results.rows[i].id;%>/edit">edit</a></li>
+                <li><a href="/admin/payments/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                            <li> <a href="/admin/payments/<%=results.rows[i].id;%>/purchases">purchases</a></li>
+
+                            <li> <a href="/admin/purchases/create?payments_id=<%=results.rows[i].id;%>"> add purchases</a></li>
+
+            
+                            <li> <a href="/admin/payments/<%=results.rows[i].id;%>/users">users</a></li>
+
+            
+                            <li> <a href="/admin/payments/<%=results.rows[i].id;%>/users">users</a></li>
+
+            
+                            <li> <a href="/admin/payments/<%=results.rows[i].id;%>/purchases">purchases</a></li>
+
+            
+                            <li> <a href="/admin/payments/<%=results.rows[i].id;%>/goods">goods</a></li>
+
+            
+                        </ul>
+
+        </footer>
+    </div>
+
+    <% } %>
+
+</section>
+
+
+
+<% include ../include/footer %>

@@ -1,0 +1,348 @@
+<% include ../include/header %>
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الد�?عة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+        <section id="searchForm" class="<%=(search.searchButton != undefined)? '':'mini';%>">
+            <form action="" method="get">
+                <button type="submit" value="search"  class="searchButton" name="searchButton">search</button>
+
+
+
+
+
+
+
+                
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="id" value="<%=search.id;%>" placeholder="id" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="name" value="<%=search.name;%>" placeholder="name" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="email" value="<%=search.email;%>" placeholder="email" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="phone" value="<%=search.phone;%>" placeholder="phone" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="password" value="<%=search.password;%>" placeholder="password" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="img" value="<%=search.img;%>" placeholder="img" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="rank" value="<%=search.rank;%>" placeholder="rank" >
+                        </div>
+
+
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </form>
+            <i class=" searchIcon fa fa-search"></i>
+        </section>
+
+
+
+
+
+
+<section id="bodySection">
+
+
+
+
+    <div class="miniMenuContainer aboveTableMiniMenu">
+        <i class="menuIcon fa fa-list"></i>
+        <div class="menuZeroContainer">
+            <ul>
+                <li><a href="/client/users/create">add users</a></li>
+
+                                <li><a href="/client/users/goods">users goods</a></li>
+                                <li><a href="/client/users/offers">users offers</a></li>
+                                <li><a href="/client/users/offers">users offers</a></li>
+                                <li><a href="/client/users/offers_comments">users offers_comments</a></li>
+                                <li><a href="/client/users/comments">users comments</a></li>
+                                <li><a href="/client/users/raises">users raises</a></li>
+                                <li><a href="/client/users/purchases">users purchases</a></li>
+                                <li><a href="/client/users/purchases_offers">users purchases_offers</a></li>
+                                <li><a href="/client/users/payments">users payments</a></li>
+                                <li><a href="/client/users/payments">users payments</a></li>
+                                <li><a href="/client/users/users_details">users users_details</a></li>
+                                <li><a href="/client/users/users_documents">users users_documents</a></li>
+                                <li><a href="/client/users/money_transfer">users money_transfer</a></li>
+                                <li><a href="/client/users/money_transfer">users money_transfer</a></li>
+                                <li><a href="/client/users/charge_account">users charge_account</a></li>
+                                <li><a href="/client/users/financial_movement">users financial_movement</a></li>
+                
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+   <div class="primary_table_div info" >
+<div class="table">
+
+
+   <div class="thead">
+      <div class="tr">
+
+         
+         <div class="th"><%-orderByLink('id',search);%></div>
+         
+         <div class="th"><%-orderByLink('name',search);%></div>
+         
+         <div class="th"><%-orderByLink('email',search);%></div>
+         
+         <div class="th"><%-orderByLink('phone',search);%></div>
+         
+         <div class="th"><%-orderByLink('password',search);%></div>
+         
+         <div class="th"><%-orderByLink('img',search);%></div>
+         
+         <div class="th"><%-orderByLink('rank',search);%></div>
+                  <div class="th">Actions</div>
+
+      </div>
+   </div>
+
+
+   <div class="tbody">
+
+
+      <% for(var i=0;i<results.rows.length;i++) { %>
+      <div class="tr">
+         
+       
+          <div class="td"><label>id : </label><p><%=results.rows[i].id;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>name : </label><p><%=results.rows[i].name;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>email : </label><p><%=results.rows[i].email;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>phone : </label><p><%=results.rows[i].phone;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>password : </label><p><%=results.rows[i].password;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>img : </label><p><%=results.rows[i].img;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>rank : </label><p><%=results.rows[i].rank;%></p></div>
+
+          
+
+                  <div class="td">
+            <ul>
+              <li> <a href="/client/users/<%=results.rows[i].id;%>">show</a></li>
+              <li> <a href="/client/users/<%=results.rows[i].id;%>/edit">edit</a></li>
+               <li> <a href="/client/users/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/goods">goods</a>
+               </li>
+                              <li><a href="/client/goods/create?users_id=<%=results.rows[i].id;%>"> add goods</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/offers">offers</a>
+               </li>
+                              <li><a href="/client/offers/create?users_id=<%=results.rows[i].id;%>"> add offers</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/offers">offers</a>
+               </li>
+                              <li><a href="/client/offers/create?users_id=<%=results.rows[i].id;%>"> add offers</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/offers_comments">offers_comments</a>
+               </li>
+                              <li><a href="/client/offers_comments/create?users_id=<%=results.rows[i].id;%>"> add offers_comments</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/comments">comments</a>
+               </li>
+                              <li><a href="/client/comments/create?users_id=<%=results.rows[i].id;%>"> add comments</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/raises">raises</a>
+               </li>
+                              <li><a href="/client/raises/create?users_id=<%=results.rows[i].id;%>"> add raises</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/purchases">purchases</a>
+               </li>
+                              <li><a href="/client/purchases/create?users_id=<%=results.rows[i].id;%>"> add purchases</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/purchases_offers">purchases_offers</a>
+               </li>
+                              <li><a href="/client/purchases_offers/create?users_id=<%=results.rows[i].id;%>"> add purchases_offers</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/payments">payments</a>
+               </li>
+                              <li><a href="/client/payments/create?users_id=<%=results.rows[i].id;%>"> add payments</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/payments">payments</a>
+               </li>
+                              <li><a href="/client/payments/create?users_id=<%=results.rows[i].id;%>"> add payments</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/users_details">users_details</a>
+               </li>
+                              <li><a href="/client/users_details/create?users_id=<%=results.rows[i].id;%>"> add users_details</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/users_documents">users_documents</a>
+               </li>
+                              <li><a href="/client/users_documents/create?users_id=<%=results.rows[i].id;%>"> add users_documents</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/money_transfer">money_transfer</a>
+               </li>
+                              <li><a href="/client/money_transfer/create?users_id=<%=results.rows[i].id;%>"> add money_transfer</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/money_transfer">money_transfer</a>
+               </li>
+                              <li><a href="/client/money_transfer/create?users_id=<%=results.rows[i].id;%>"> add money_transfer</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/charge_account">charge_account</a>
+               </li>
+                              <li><a href="/client/charge_account/create?users_id=<%=results.rows[i].id;%>"> add charge_account</a>
+               </li>
+               
+                              <li><a href="/client/users/<%=results.rows[i].id;%>/financial_movement">financial_movement</a>
+               </li>
+                              <li><a href="/client/financial_movement/create?users_id=<%=results.rows[i].id;%>"> add financial_movement</a>
+               </li>
+               
+                           </ul>
+
+         </div>
+      </div>
+<% } %>
+
+
+   </div>
+
+
+
+   <div class="tfoot">
+      <div class="tr">
+         <div class="td">
+
+
+         </div>
+
+      </div>
+
+   </div>
+
+
+
+</div>
+
+       <div class="tableFooter">
+           <%-createPagination(results.total,search);%>
+       </div>
+</div>
+
+
+
+
+</section>
+
+
+
+<% include ../include/footer %>
+

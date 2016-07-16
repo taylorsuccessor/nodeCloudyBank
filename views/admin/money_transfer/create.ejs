@@ -1,0 +1,139 @@
+<% include ../include/header %>
+
+<section id="center_page_section">
+  <div class="centerPageHeader" id="center_body_header" >
+    أدخل معلومات الدفعة
+
+  </div><!-- #center_body_header -->
+
+  <div class="block_body"  id="center_body_body">
+
+
+
+
+  <form method="post" >
+<div class="form-group">
+                    <label>users_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="users_id"  value="<%=values.users_id;%>"  placeholder="users_id"id="users_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>to_users_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="to_users_id"  value="<%=values.to_users_id;%>"  placeholder="to_users_id"id="to_users_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>to_user_phone</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="to_user_phone"  value="<%=values.to_user_phone;%>"  placeholder="to_user_phone"id="to_user_phone"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                      <label>type</label>
+                      <select type="select" class="form-control  input-sm" name="type"  id="type" ><% var money_transfer_type=arrays("money_transfer","type");%>
+    <% for(var key in money_transfer_type){%>
+        <option value="<%=key;%>"><%=money_transfer_type[key];%></option>
+                          <% } %> </select>
+                    </div><div class="form-group">
+                    <label>amount</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="number" class="form-control  input-sm" name="amount"  value="<%=values.amount;%>"  placeholder="amount"id="amount"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>bank_name</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="bank_name"  value="<%=values.bank_name;%>"  placeholder="bank_name"id="bank_name"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>account_number</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="account_number"  value="<%=values.account_number;%>"  placeholder="account_number"id="account_number"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>account_holder</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="account_holder"  value="<%=values.account_holder;%>"  placeholder="account_holder"id="account_holder"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>exchange_name</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="exchange_name"  value="<%=values.exchange_name;%>"  placeholder="exchange_name"id="exchange_name"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>exchange_address</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="exchange_address"  value="<%=values.exchange_address;%>"  placeholder="exchange_address"id="exchange_address"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><label>extra_details</label>
+                 <div class="form-group">
+
+
+                      <textarea type="textarea" class="form-control  input-sm" name="extra_details"  placeholder="extra_details"id="extra_details"  style="height:150px;" ><%=values.extra_details;%> </textarea>
+
+                  </div><!-- /.form group --><div class="form-group">
+                      <label>status</label>
+                      <select type="select" class="form-control  input-sm" name="status"  id="status" ><% var money_transfer_status=arrays("money_transfer","status");%>
+    <% for(var key in money_transfer_status){%>
+        <option value="<%=key;%>"><%=money_transfer_status[key];%></option>
+                          <% } %> </select>
+                    </div><div class="form-group">
+                    <label>date</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-calendar-o"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="date"  value="<%=values.date;%>"  placeholder="date"id="date" data-inputmask="'alias': 'yyyy-mm-dd'" data-mask />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="box-footer"></div>
+  <input type="submit" value="create">
+</form>
+
+
+<script>$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("#date").inputmask("yyyy-mm-dd", {"placeholder": "yyyy-mm-dd"});</script>
+<% include ../include/footer %>

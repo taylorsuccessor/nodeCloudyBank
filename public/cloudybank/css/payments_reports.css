@@ -1,0 +1,49 @@
+/*____________________override*/
+.block_header{width:100%;}
+/*_________________END___override*/
+/*_________________________________________-table*/
+/*__________________search*/
+#search_payment_in_out_div{
+    width:49%;
+}
+#search_payment_in_out_div label{
+
+width: 30%;
+
+
+width: calc(32.7777% - 12px);
+
+
+margin-left: 0.5%;
+
+}
+#search_payment_in_out_div label:last-child{margin-left:0px;float:left;}
+#search_payment_status_div{
+    width: 49%;
+}
+
+#search_payment_status_div label{
+
+width: 22%;
+
+
+width: calc(24.5% - 12px);
+
+
+margin-left: 0.5%;
+
+
+}
+
+#search_payment_status_div label:last-child{margin-left:0px;float:left;}
+#search_worth_date_div,#search_pay_date_div,#search_to_user_phone_div{
+    width:25%;
+}
+#search_worth_date_div input,#search_pay_date_div input,#search_to_user_phone_div input{
+    width: 100%;
+    border: 1px solid transparent;
+    min-height: 32px;
+}
+input[name="search"]{width: 21%;}
+/*________________END__search*/
+/*____________________________________END_____-table*/

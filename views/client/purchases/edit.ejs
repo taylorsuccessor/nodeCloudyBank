@@ -1,0 +1,134 @@
+<% include ../include/header %>
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+
+    <form method="post" >
+    <div class="form-group">
+                    <label>users_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="users_id"  value="<%=values.users_id;%>"  placeholder="users_id"id="users_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>goods_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="goods_id"  value="<%=values.goods_id;%>"  placeholder="goods_id"id="goods_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>offers_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="offers_id"  value="<%=values.offers_id;%>"  placeholder="offers_id"id="offers_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>public_price</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="number" class="form-control  input-sm" name="public_price"  value="<%=values.public_price;%>"  placeholder="public_price"id="public_price"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>last_raise</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="number" class="form-control  input-sm" name="last_raise"  value="<%=values.last_raise;%>"  placeholder="last_raise"id="last_raise"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>installment_gain</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="number" class="form-control  input-sm" name="installment_gain"  value="<%=values.installment_gain;%>"  placeholder="installment_gain"id="installment_gain"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                      <label>installment_unit</label>
+                      <select type="select" class="form-control  input-sm" name="installment_unit"  id="installment_unit" ><% var purchases_installment_unit=arrays("purchases","installment_unit");%>
+    <% for(var key in purchases_installment_unit){%>
+        <option value="<%=key;%>"><%=purchases_installment_unit[key];%></option>
+                          <% } %> </select>
+                    </div><div class="form-group">
+                    <label>installment_max_repeat</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="installment_max_repeat"  value="<%=values.installment_max_repeat;%>"  placeholder="installment_max_repeat"id="installment_max_repeat"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                      <label>status</label>
+                      <select type="select" class="form-control  input-sm" name="status"  id="status" ><% var purchases_status=arrays("purchases","status");%>
+    <% for(var key in purchases_status){%>
+        <option value="<%=key;%>"><%=purchases_status[key];%></option>
+                          <% } %> </select>
+                    </div><div class="form-group">
+                    <label>earnest</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="number" class="form-control  input-sm" name="earnest"  value="<%=values.earnest;%>"  placeholder="earnest"id="earnest"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>payments_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="payments_id"  value="<%=values.payments_id;%>"  placeholder="payments_id"id="payments_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>date</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-calendar-o"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="date"  value="<%=values.date;%>"  placeholder="date"id="date" data-inputmask="'alias': 'yyyy-mm-dd'" data-mask />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->    <div class="box-footer"></div>
+    <input type="submit" value="create">
+</form>
+
+<script>$("#date").inputmask("yyyy-mm-dd", {"placeholder": "yyyy-mm-dd"});</script>
+<% include ../include/footer %>

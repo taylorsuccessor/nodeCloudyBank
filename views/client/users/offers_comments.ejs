@@ -1,0 +1,102 @@
+<% include ../include/header %>
+
+
+<section id="bodySection">
+
+   <a href="/admin/goods/create">add goods</a>
+   <a href="/admin/goods/users">goods users</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="primary_table_div info" >
+
+
+    <div class="table">
+
+
+        <div class="thead">
+            <div class="tr">
+
+
+
+                <% for (var key in results.rows[0]) { %>
+                <div class="th"><%-orderByLink(key,search);%></div>
+                <% }%>
+                <div class="th">Actions</div>
+
+            </div>
+        </div>
+
+
+        <div class="tbody">
+
+
+            <% for(var i=0;i<results.rows.length;i++) { %>
+            <div class="tr">
+                <% for (var key in results.rows[i]) { %>
+                <div class="td"><label><%=key;%> : </label><p><%=results.rows[i][key];%></p></div>
+
+                <% } %>
+                <div class="td">
+                    <ul>
+                        <li> <a href="/client/offers_comments/<%=results.rows[i].offers_comments_id;%>">show offers_comments</a></li>
+                        <li> <a href="/client/offers_comments/<%=results.rows[i].offers_comments_id;%>/edit">edit offers_comments</a></li>
+
+                        <li> <a href="/client/users/<%=results.rows[i].users_id;%>">show users</a></li>
+                        <li> <a href="/client/users/<%=results.rows[i].users_id;%>/edit">edit users</a></li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <% } %>
+
+
+        </div>
+
+
+
+        <div class="tfoot">
+            <div class="tr">
+                <div class="td">
+
+                    <%-createPagination(results.total,search);%>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<% include ../include/footer %>

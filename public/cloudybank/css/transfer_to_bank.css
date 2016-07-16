@@ -1,0 +1,18 @@
+/*__________________________tab*/
+.bage_tab_div{
+    width:33.3333%;
+    border-right: 1px solid #fff;
+    margin-right: -1px;
+}
+/*________________________END__tab*/
+
+/*______________________form*/
+#bank_account_number_input,#bank_account_name_input,#bank_transfer_amount_input,#bank_account_name_input
+,.bank_account_name_input,#current_account_balance,.half_row{ display: block;width:50%;margin:2%;}
+#bank_name_label{ width: 30%;}
+#bank_name_select{ width: 70%; margin: 0px;}
+#current_account_balance{
+    text-align: center;
+    background-color: #DFDEE0;
+}
+/*__________END____________form*/

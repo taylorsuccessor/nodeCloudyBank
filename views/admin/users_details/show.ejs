@@ -1,0 +1,111 @@
+<% include ../include/header %>
+
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+    <section id="bodySection">
+
+
+
+    <% for(var i=0;i<results.rows.length;i++) { %>
+    <div class="showItemBox">
+        <header><h3>users_details </h3></header>
+        <section>
+
+            
+            
+            <div><label>id : </label><%=results.rows[i].id;%></div>
+            
+
+            
+            
+            <div><label>users_id : </label><%=results.rows[i].users_id;%></div>
+            
+
+            
+            
+            <div><label>home_address : </label><%=results.rows[i].home_address;%></div>
+            
+
+            
+            
+            <div><label>job : </label><%=results.rows[i].job;%></div>
+            
+
+            
+            
+            <div><label>job_address : </label><%=results.rows[i].job_address;%></div>
+            
+
+            
+            
+            <div><label>other_phones : </label><%=results.rows[i].other_phones;%></div>
+            
+
+            
+            
+            <div><label>coordinates : </label><%=results.rows[i].coordinates;%></div>
+            
+
+            
+            
+            <div><label>national_number : </label><%=results.rows[i].national_number;%></div>
+            
+
+            
+            
+            <div><label>sallary : </label><%=results.rows[i].sallary;%></div>
+            
+
+            
+            
+            <div><label>bank_name : </label><%=results.rows[i].bank_name;%></div>
+            
+
+            
+            
+            <div><label>bank_account : </label><%=results.rows[i].bank_account;%></div>
+            
+
+            
+            
+            <div><label>security_number : </label><%=results.rows[i].security_number;%></div>
+            
+
+            
+            
+            <div><label>extra_details : </label><%=results.rows[i].extra_details;%></div>
+            
+
+                    </section>
+        <footer>
+            <ul>
+            <li><a href="/admin/users_details/<%=results.rows[i].id;%>">show</a></li>
+                <li><a href="/admin/users_details/<%=results.rows[i].id;%>/edit">edit</a></li>
+                <li><a href="/admin/users_details/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                            <li> <a href="/admin/users_details/<%=results.rows[i].id;%>/users">users</a></li>
+
+            
+                        </ul>
+
+        </footer>
+    </div>
+
+    <% } %>
+
+</section>
+
+
+
+<% include ../include/footer %>

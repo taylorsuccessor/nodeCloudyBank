@@ -1,0 +1,158 @@
+<% include ../include/header %>
+
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+    <section id="bodySection">
+
+
+
+    <% for(var i=0;i<results.rows.length;i++) { %>
+    <div class="showItemBox">
+        <header><h3>users </h3></header>
+        <section>
+
+            
+            
+            <div><label>id : </label><%=results.rows[i].id;%></div>
+            
+
+            
+            
+            <div><label>name : </label><%=results.rows[i].name;%></div>
+            
+
+            
+            
+            <div><label>email : </label><%=results.rows[i].email;%></div>
+            
+
+            
+            
+            <div><label>phone : </label><%=results.rows[i].phone;%></div>
+            
+
+            
+            
+            <div><label>password : </label><%=results.rows[i].password;%></div>
+            
+
+            
+            
+            <div><label>img : </label><%=results.rows[i].img;%></div>
+            
+
+            
+            
+            <div><label>rank : </label><%=results.rows[i].rank;%></div>
+            
+
+                    </section>
+        <footer>
+            <ul>
+            <li><a href="/client/users/<%=results.rows[i].id;%>">show</a></li>
+                <li><a href="/client/users/<%=results.rows[i].id;%>/edit">edit</a></li>
+                <li><a href="/client/users/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/goods">goods</a></li>
+
+                            <li> <a href="/client/goods/create?users_id=<%=results.rows[i].id;%>"> add goods</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/offers">offers</a></li>
+
+                            <li> <a href="/client/offers/create?users_id=<%=results.rows[i].id;%>"> add offers</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/offers">offers</a></li>
+
+                            <li> <a href="/client/offers/create?users_id=<%=results.rows[i].id;%>"> add offers</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/offers_comments">offers_comments</a></li>
+
+                            <li> <a href="/client/offers_comments/create?users_id=<%=results.rows[i].id;%>"> add offers_comments</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/comments">comments</a></li>
+
+                            <li> <a href="/client/comments/create?users_id=<%=results.rows[i].id;%>"> add comments</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/raises">raises</a></li>
+
+                            <li> <a href="/client/raises/create?users_id=<%=results.rows[i].id;%>"> add raises</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/purchases">purchases</a></li>
+
+                            <li> <a href="/client/purchases/create?users_id=<%=results.rows[i].id;%>"> add purchases</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/purchases_offers">purchases_offers</a></li>
+
+                            <li> <a href="/client/purchases_offers/create?users_id=<%=results.rows[i].id;%>"> add purchases_offers</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/payments">payments</a></li>
+
+                            <li> <a href="/client/payments/create?users_id=<%=results.rows[i].id;%>"> add payments</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/payments">payments</a></li>
+
+                            <li> <a href="/client/payments/create?users_id=<%=results.rows[i].id;%>"> add payments</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/users_details">users_details</a></li>
+
+                            <li> <a href="/client/users_details/create?users_id=<%=results.rows[i].id;%>"> add users_details</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/users_documents">users_documents</a></li>
+
+                            <li> <a href="/client/users_documents/create?users_id=<%=results.rows[i].id;%>"> add users_documents</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/money_transfer">money_transfer</a></li>
+
+                            <li> <a href="/client/money_transfer/create?users_id=<%=results.rows[i].id;%>"> add money_transfer</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/money_transfer">money_transfer</a></li>
+
+                            <li> <a href="/client/money_transfer/create?users_id=<%=results.rows[i].id;%>"> add money_transfer</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/charge_account">charge_account</a></li>
+
+                            <li> <a href="/client/charge_account/create?users_id=<%=results.rows[i].id;%>"> add charge_account</a></li>
+
+            
+                            <li> <a href="/client/users/<%=results.rows[i].id;%>/financial_movement">financial_movement</a></li>
+
+                            <li> <a href="/client/financial_movement/create?users_id=<%=results.rows[i].id;%>"> add financial_movement</a></li>
+
+            
+                        </ul>
+
+        </footer>
+    </div>
+
+    <% } %>
+
+</section>
+
+
+
+<% include ../include/footer %>

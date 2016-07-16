@@ -1,0 +1,169 @@
+<% include ../include/header %>
+
+<section id="center_page_section">
+  <div class="centerPageHeader" id="center_body_header" >
+    أدخل معلومات الدفعة
+
+  </div><!-- #center_body_header -->
+
+  <div class="block_body"  id="center_body_body">
+
+
+
+
+  <form method="post" >
+<div class="form-group">
+                      <label>category</label>
+                      <select type="select" class="form-control  input-sm" name="category"  id="category" ><% var goods_category=arrays("goods","category");%>
+    <% for(var key in goods_category){%>
+        <option value="<%=key;%>"><%=goods_category[key];%></option>
+                          <% } %> </select>
+                    </div><div class="form-group">
+                    <label>users_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="users_id"  value="<%=values.users_id;%>"  placeholder="users_id"id="users_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>user_name</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="user_name"  value="<%=values.user_name;%>"  placeholder="user_name"id="user_name"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>title</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="title"  value="<%=values.title;%>"  placeholder="title"id="title"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>img</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-pencil"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="img"  value="<%=values.img;%>"  placeholder="img"id="img"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><label>description</label>
+                 <div class="form-group">
+
+
+                      <textarea type="textarea" class="form-control  input-sm" name="description"  placeholder="description"id="description"  style="height:150px;" ><%=values.description;%> </textarea>
+
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>public_price</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="number" class="form-control  input-sm" name="public_price"  value="<%=values.public_price;%>"  placeholder="public_price"id="public_price"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>last_raise</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="number" class="form-control  input-sm" name="last_raise"  value="<%=values.last_raise;%>"  placeholder="last_raise"id="last_raise"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>installment_gain</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="number" class="form-control  input-sm" name="installment_gain"  value="<%=values.installment_gain;%>"  placeholder="installment_gain"id="installment_gain"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                      <label>installment_unit</label>
+                      <select type="select" class="form-control  input-sm" name="installment_unit"  id="installment_unit" ><% var goods_installment_unit=arrays("goods","installment_unit");%>
+    <% for(var key in goods_installment_unit){%>
+        <option value="<%=key;%>"><%=goods_installment_unit[key];%></option>
+                          <% } %> </select>
+                    </div><div class="form-group">
+                    <label>installment_max_repeat</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="installment_max_repeat"  value="<%=values.installment_max_repeat;%>"  placeholder="installment_max_repeat"id="installment_max_repeat"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>inserted_date</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-calendar-o"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="inserted_date"  value="<%=values.inserted_date;%>"  placeholder="inserted_date"id="inserted_date" data-inputmask="'alias': 'yyyy-mm-dd'" data-mask />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>img_number</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="img_number"  value="<%=values.img_number;%>"  placeholder="img_number"id="img_number"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>comments_number</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="comments_number"  value="<%=values.comments_number;%>"  placeholder="comments_number"id="comments_number"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>earnest</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="number" class="form-control  input-sm" name="earnest"  value="<%=values.earnest;%>"  placeholder="earnest"id="earnest"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>available_quantity</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="available_quantity"  value="<%=values.available_quantity;%>"  placeholder="available_quantity"id="available_quantity"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="box-footer"></div>
+  <input type="submit" value="create">
+</form>
+
+
+<script>$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("[data-mask]").inputmask();$("#inserted_date").inputmask("yyyy-mm-dd", {"placeholder": "yyyy-mm-dd"});</script>
+<% include ../include/footer %>

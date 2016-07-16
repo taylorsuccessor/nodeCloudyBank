@@ -1,0 +1,36 @@
+@import "./variables/main";
+
+
+
+@import '../../css/classes.css';
+
+
+@import "./parts/public";
+
+//@import 'rtl.css';
+@import 'ltr.css';
+//@import './add_expensess.css';
+//@import "./add_goad.css";
+//@import "login.css";
+//@import "./dashboard.css";
+//@import "./payments_reports.css";
+//@import "./set_personal_info.css";
+//@import "./shopping.css";
+//@import "./transfer_to_bank.css";
+//@import "./transfer_to_exchange.css";
+//@import "./transfer_to_person.css";
+
+
+
+@import "./parts/classes";
+@import "./parts/header";
+@import "./parts/tabs";
+
+@import "./parts/popupWindow";
+@import "./parts/pageCenter";
+@import "./parts/menu";
+
+@import "./parts/table";
+@import "./parts/searchForm";
+@import "./parts/footerLine";
+@import "./parts/messages";

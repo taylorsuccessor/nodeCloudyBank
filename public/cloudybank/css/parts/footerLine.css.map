@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,mCAAmC;AAEnC,YAAY;EACV,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,GAAG;EACZ,UAAU,EAAE,MAAM;EAClB,KAAK,EAAC,IAAI;EACV,KAAK,EAAE,IAAI;;AAGb,oCAAoC",
+"sources": ["footerLine.scss"],
+"names": [],
+"file": "footerLine.css"
+}

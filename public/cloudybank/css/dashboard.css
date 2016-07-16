@@ -1,0 +1,20 @@
+/*_______________________________center_page_section*/
+
+
+/*____________________________End___center_page_section*/
+/*_______________________________________charts*/
+svg{
+  
+    direction:ltr; }
+#pie_chart_div,#clock_div{
+    width:40%;
+}
+#pie_chart_div{display:inline;width:50%;float:right;}
+#pie2_chart_div{width:50%; display:inline; float:left;}
+#clock_div { 
+width:200px;
+height: 100px !IMPORTANT;
+}
+#clock_div *{max-height: 200px;}
+#clock_div rect{ fill:transparent;}
+/*____________________________________END___charts*/

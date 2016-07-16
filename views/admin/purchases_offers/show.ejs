@@ -1,0 +1,78 @@
+<% include ../include/header %>
+
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+    <section id="bodySection">
+
+
+
+    <% for(var i=0;i<results.rows.length;i++) { %>
+    <div class="showItemBox">
+        <header><h3>purchases_offers </h3></header>
+        <section>
+
+            
+            
+            <div><label>id : </label><%=results.rows[i].id;%></div>
+            
+
+            
+            
+            <div><label>purchases_id : </label><%=results.rows[i].purchases_id;%></div>
+            
+
+            
+            
+            <div><label>users_id : </label><%=results.rows[i].users_id;%></div>
+            
+
+            
+            
+            <div><label>bayer_id : </label><%=results.rows[i].bayer_id;%></div>
+            
+
+            
+                        <div><label>status : </label> <%=arrays('purchases_offers','status',results.rows[i].status);%></div>
+            
+
+            
+            
+            <div><label>extra_info : </label><%=results.rows[i].extra_info;%></div>
+            
+
+                    </section>
+        <footer>
+            <ul>
+            <li><a href="/admin/purchases_offers/<%=results.rows[i].id;%>">show</a></li>
+                <li><a href="/admin/purchases_offers/<%=results.rows[i].id;%>/edit">edit</a></li>
+                <li><a href="/admin/purchases_offers/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                            <li> <a href="/admin/purchases_offers/<%=results.rows[i].id;%>/purchases">purchases</a></li>
+
+            
+                            <li> <a href="/admin/purchases_offers/<%=results.rows[i].id;%>/users">users</a></li>
+
+            
+                        </ul>
+
+        </footer>
+    </div>
+
+    <% } %>
+
+</section>
+
+
+
+<% include ../include/footer %>

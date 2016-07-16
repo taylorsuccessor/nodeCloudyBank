@@ -1,0 +1,61 @@
+<% include ../include/header %>
+
+<section id="center_page_section">
+  <div class="centerPageHeader" id="center_body_header" >
+    أدخل معلومات الدفعة
+
+  </div><!-- #center_body_header -->
+
+  <div class="block_body"  id="center_body_body">
+
+
+
+
+  <form method="post" >
+<div class="form-group">
+                    <label>goods_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="goods_id"  value="<%=values.goods_id;%>"  placeholder="goods_id"id="goods_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>users_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="users_id"  value="<%=values.users_id;%>"  placeholder="users_id"id="users_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>price</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="number" class="form-control  input-sm" name="price"  value="<%=values.price;%>"  placeholder="price"id="price"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>date</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-calendar-o"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="date"  value="<%=values.date;%>"  placeholder="date"id="date" data-inputmask="'alias': 'yyyy-mm-dd'" data-mask />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="box-footer"></div>
+  <input type="submit" value="create">
+</form>
+
+
+<script>$("#date").inputmask("yyyy-mm-dd", {"placeholder": "yyyy-mm-dd"});</script>
+<% include ../include/footer %>

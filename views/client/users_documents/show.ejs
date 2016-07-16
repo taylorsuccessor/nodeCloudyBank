@@ -1,0 +1,81 @@
+<% include ../include/header %>
+
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+    <section id="bodySection">
+
+
+
+    <% for(var i=0;i<results.rows.length;i++) { %>
+    <div class="showItemBox">
+        <header><h3>users_documents </h3></header>
+        <section>
+
+            
+            
+            <div><label>id : </label><%=results.rows[i].id;%></div>
+            
+
+            
+            
+            <div><label>users_id : </label><%=results.rows[i].users_id;%></div>
+            
+
+            
+            
+            <div><label>name : </label><%=results.rows[i].name;%></div>
+            
+
+            
+            
+            <div><label>file_type : </label><%=results.rows[i].file_type;%></div>
+            
+
+            
+            
+            <div><label>file_path : </label><%=results.rows[i].file_path;%></div>
+            
+
+            
+            
+            <div><label>credibility : </label><%=results.rows[i].credibility;%></div>
+            
+
+            
+            
+            <div><label>extra_details : </label><%=results.rows[i].extra_details;%></div>
+            
+
+                    </section>
+        <footer>
+            <ul>
+            <li><a href="/client/users_documents/<%=results.rows[i].id;%>">show</a></li>
+                <li><a href="/client/users_documents/<%=results.rows[i].id;%>/edit">edit</a></li>
+                <li><a href="/client/users_documents/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                            <li> <a href="/client/users_documents/<%=results.rows[i].id;%>/users">users</a></li>
+
+            
+                        </ul>
+
+        </footer>
+    </div>
+
+    <% } %>
+
+</section>
+
+
+
+<% include ../include/footer %>

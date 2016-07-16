@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: 'my_font_family';
+  src:url(../fonts/GE_SS_Two_Light.otf);
+}
+*:not( i  ){ font-family: my_font_family; font-size: 14px;}
+table td,.number,.date{ font-family: time; font-size: 14px;}
+
+body{ margin: 0px; background-color: $mainBgColor;}
+/*__________________________reset*/
+a{ text-decoration: none;}
+/*________________________END__reset*/
+
+

@@ -1,0 +1,69 @@
+<% include ../include/header %>
+
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+    <section id="bodySection">
+
+
+
+    <% for(var i=0;i<results.rows.length;i++) { %>
+    <div class="showItemBox">
+        <header><h3>comments </h3></header>
+        <section>
+
+            
+            
+            <div><label>id : </label><%=results.rows[i].id;%></div>
+            
+
+            
+            
+            <div><label>goods_id : </label><%=results.rows[i].goods_id;%></div>
+            
+
+            
+            
+            <div><label>users_id : </label><%=results.rows[i].users_id;%></div>
+            
+
+            
+            
+            <div><label>comment : </label><%=results.rows[i].comment;%></div>
+            
+
+                    </section>
+        <footer>
+            <ul>
+            <li><a href="/admin/comments/<%=results.rows[i].id;%>">show</a></li>
+                <li><a href="/admin/comments/<%=results.rows[i].id;%>/edit">edit</a></li>
+                <li><a href="/admin/comments/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                            <li> <a href="/admin/comments/<%=results.rows[i].id;%>/goods">goods</a></li>
+
+            
+                            <li> <a href="/admin/comments/<%=results.rows[i].id;%>/users">users</a></li>
+
+            
+                        </ul>
+
+        </footer>
+    </div>
+
+    <% } %>
+
+</section>
+
+
+
+<% include ../include/footer %>

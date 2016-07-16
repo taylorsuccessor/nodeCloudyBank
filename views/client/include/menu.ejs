@@ -1,0 +1,351 @@
+
+<aside id="main_menu_aside">
+    <div id="account_amount_div">
+
+
+        30$
+    </div>
+
+    <ul id="left_menu_ul">
+        <%
+         var leftMenu= [
+             ["السلع المتابعة","link","fa fa-car"],
+             ["كشف حساب","link","fa fa-car"],
+             ["تسليم السلع للغير","link","fa fa-car"],
+             ["السلع بانتظار التسليم ","link","fa fa-car"],
+             [" الدفعات الواجبة علي ","link","fa fa-car"],
+             [" الدفعات المستحقة لحسابي ","link","fa fa-car"],
+             ["الدفعات الواجبة","link","fa fa-car"],
+             ["سلعي","link","fa fa-car"],
+             ["عمليات التحويل","link","fa fa-car"],
+             ["الفواتير ","link","fa fa-car"],
+
+         ];
+
+
+
+        for (var i = 0; i <  leftMenu.length; i++) {
+            %>
+        <li>
+            <a href=" <%=  leftMenu[i][1]; %>">
+                <%=  leftMenu[i][0]; %>
+                <i class=" <%=  leftMenu[i][2]; %>"></i>
+            </a>
+        </li>
+        <% } %>
+    </ul>
+
+</aside>
+
+
+
+
+<!--<ul class="mainMenu">-->
+    <!--<li> <a href="/admin/goods">goods</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/goods/create">create goods</a></li>-->
+
+        <!--<li><a href="/admin/goods/users">goods users</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/goods/offers">goods offers</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/goods/goods_img">goods goods_img</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/goods/comments">goods comments</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/goods/raises">goods raises</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/goods/purchases">goods purchases</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/goods/payments">goods payments</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/offers">offers</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/offers/create">create offers</a></li>-->
+
+        <!--<li><a href="/admin/offers/goods">offers goods</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/offers/users">offers users</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/offers/users">offers users</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/offers/purchases">offers purchases</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/offers_comments">offers_comments</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/offers_comments/create">create offers_comments</a></li>-->
+
+        <!--<li><a href="/admin/offers_comments/users">offers_comments users</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/goods_img">goods_img</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/goods_img/create">create goods_img</a></li>-->
+
+        <!--<li><a href="/admin/goods_img/goods">goods_img goods</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/comments">comments</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/comments/create">create comments</a></li>-->
+
+        <!--<li><a href="/admin/comments/goods">comments goods</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/comments/users">comments users</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/raises">raises</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/raises/create">create raises</a></li>-->
+
+        <!--<li><a href="/admin/raises/goods">raises goods</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/raises/users">raises users</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/purchases">purchases</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/purchases/create">create purchases</a></li>-->
+
+        <!--<li><a href="/admin/purchases/users">purchases users</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/purchases/goods">purchases goods</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/purchases/offers">purchases offers</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/purchases/payments">purchases payments</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/purchases/purchases_offers">purchases purchases_offers</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/purchases/payments">purchases payments</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/purchases_offers">purchases_offers</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/purchases_offers/create">create purchases_offers</a></li>-->
+
+        <!--<li><a href="/admin/purchases_offers/purchases">purchases_offers purchases</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/purchases_offers/users">purchases_offers users</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/payments">payments</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/payments/create">create payments</a></li>-->
+
+        <!--<li><a href="/admin/payments/purchases">payments purchases</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/payments/users">payments users</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/payments/users">payments users</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/payments/purchases">payments purchases</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/payments/goods">payments goods</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/users">users</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/users/create">create users</a></li>-->
+
+        <!--<li><a href="/admin/users/goods">users goods</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/offers">users offers</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/offers">users offers</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/offers_comments">users offers_comments</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/comments">users comments</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/raises">users raises</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/purchases">users purchases</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/purchases_offers">users purchases_offers</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/payments">users payments</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/payments">users payments</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/users_details">users users_details</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/users_documents">users users_documents</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/money_transfer">users money_transfer</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/money_transfer">users money_transfer</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/charge_account">users charge_account</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/users/financial_movement">users financial_movement</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/users_details">users_details</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/users_details/create">create users_details</a></li>-->
+
+        <!--<li><a href="/admin/users_details/users">users_details users</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/users_documents">users_documents</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/users_documents/create">create users_documents</a></li>-->
+
+        <!--<li><a href="/admin/users_documents/users">users_documents users</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/money_transfer">money_transfer</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/money_transfer/create">create money_transfer</a></li>-->
+
+        <!--<li><a href="/admin/money_transfer/users">money_transfer users</a>-->
+    <!--</li>-->
+
+        <!--<li><a href="/admin/money_transfer/users">money_transfer users</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/charge_account">charge_account</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/charge_account/create">create charge_account</a></li>-->
+
+        <!--<li><a href="/admin/charge_account/users">charge_account users</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+        <!--<li> <a href="/admin/financial_movement">financial_movement</a>-->
+
+        <!--<div class="subMenu">-->
+    <!--<ul>-->
+    <!--<li> <a href="/admin/financial_movement/create">create financial_movement</a></li>-->
+
+        <!--<li><a href="/admin/financial_movement/users">financial_movement users</a>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+        <!--</div>-->
+
+    <!--</li>-->
+    <!-- -->
+<!--</ul>-->

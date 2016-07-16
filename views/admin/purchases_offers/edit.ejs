@@ -1,0 +1,74 @@
+<% include ../include/header %>
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+
+    <form method="post" >
+    <div class="form-group">
+                    <label>purchases_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="purchases_id"  value="<%=values.purchases_id;%>"  placeholder="purchases_id"id="purchases_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>users_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="users_id"  value="<%=values.users_id;%>"  placeholder="users_id"id="users_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>bayer_id</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-list-ol"></i>
+                      </div>
+                      
+                      <input type="integer" class="form-control  input-sm" name="bayer_id"  value="<%=values.bayer_id;%>"  placeholder="bayer_id"id="bayer_id"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group --><div class="form-group">
+                      <label>status</label>
+                      <select type="select" class="form-control  input-sm" name="status"  id="status" ><% var purchases_offers_status=arrays("purchases_offers","status");%>
+    <% for(var key in purchases_offers_status){%>
+        <option value="<%=key;%>"><%=purchases_offers_status[key];%></option>
+                          <% } %> </select>
+                    </div><label>extra_info</label>
+                 <div class="form-group">
+
+
+                      <textarea type="textarea" class="form-control  input-sm" name="extra_info"  placeholder="extra_info"id="extra_info"  style="height:150px;" ><%=values.extra_info;%> </textarea>
+
+                  </div><!-- /.form group --><div class="form-group">
+                    <label>date</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-calendar-o"></i>
+                      </div>
+                      
+                      <input type="text" class="form-control  input-sm" name="date"  value="<%=values.date;%>"  placeholder="date"id="date" data-inputmask="'alias': 'yyyy-mm-dd'" data-mask />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->    <div class="box-footer"></div>
+    <input type="submit" value="create">
+</form>
+
+<script>$("#date").inputmask("yyyy-mm-dd", {"placeholder": "yyyy-mm-dd"});</script>
+<% include ../include/footer %>

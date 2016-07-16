@@ -1,0 +1,30 @@
+/*________________form*/
+    #user_image_input_div{ 
+        float:left;
+        height: 112px;
+        width: 38%;
+    
+        margin-left: 2%;
+}
+    
+#address_select,#account_type_select{float:right;width: 16%; margin: 5px 0px;}
+#full_address_input{ width: 54%; margin: 0px; margin-right: 2%;}
+
+#personal_name_input,#phone_number_input,#email_input,#password_input{width:96%; margin-bottom:2%;}
+
+#work_shortcut_textarea{ width:96%;}
+
+#email_input{margin-top: 2%;}
+#phone_number_secrit_input{
+    margin: 0px;
+    padding: 0px;
+}
+#center_body_footer_bar{margin-bottom: 2%;}
+/*_________________security_livil___*/
+#security_options_section{border-top:5px solid #4A80C2;}
+.one_security_div{ border-top: 2px solid #EAE6EE;}
+#security_options_section input[type="radio"]{ float: right; margin:5px 2% 5px 0px;}
+#security_options_section h3{ font-size:18px; text-align: right; margin: 5px 0;}
+
+#security_options_section p{ margin: 5px 2%;}
+/*______________END__form*/

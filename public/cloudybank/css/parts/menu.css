@@ -1,0 +1,56 @@
+/*__________________________account_amount_box*/
+#account_amount_div {
+  border: 1px solid #8DB4DB;
+  background-color: #fff;
+  color: #4A80C2;
+  color: #4A80C2;
+  color: #4A80C2;
+  padding: 2px;
+  text-align: center;
+  margin: 5px; }
+
+/*____________________END______account_amount_box*/
+/*___________________________menu*/
+#main_menu_aside {
+  float: left;
+  width: 30%;
+  background-color: #E0D4E9;
+  padding-bottom: 100px; }
+
+#left_menu_ul {
+  margin: 0px;
+  padding: 0px; }
+
+#left_menu_ul li {
+  list-style: none;
+  display: block;
+  background-color: #EAE6EE;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1px;
+  text-align: right;
+  font-family: my_font_family;
+  font-size: 14px; }
+
+#left_menu_ul li:hover {
+  background-color: #4A80C2;
+  color: #EAE6EE; }
+
+#left_menu_ul li:hover a {
+  color: #EAE6EE; }
+
+#left_menu_ul li a {
+  color: #4A80C2;
+  display: block;
+  width: 95%;
+  text-decoration: none;
+  padding: 1%;
+  padding-right: 4%;
+  direction: ltr; }
+
+#left_menu_ul li i {
+  color: #fff;
+  margin-left: 5px; }
+
+/*________________end______menu*/
+
+/*# sourceMappingURL=menu.css.map */

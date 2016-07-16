@@ -1,0 +1,1 @@
+module.exports=function(res,req,next){console.log('I love node js middleware');next();}

@@ -1,0 +1,166 @@
+
+<% if(typeof getJustPageCenter =='undefined'){ %>
+
+
+<html>
+<head>
+    <title>dashboard</title>
+    <link rel="stylesheet" type="text/css" href="/cloudybank/css/main.css">
+    <!--fontawesome -->
+    <link  rel="stylesheet" type="text/css"  href="/cloudybank/font-awesome-4.4.0/css/font-awesome.min.css">
+
+    <!--fontawesome -->
+
+
+    <!-- jquery -->
+    <script src="/cloudybank/js/jquery-2.1.1.min.js"></script>
+
+    <!-- END jquery -->
+<script >
+    $(document).ready(function(){
+//        $.ajax({data:{getJustPageCenter:1},url: "/admin/goods/", success: function(result){
+//            $(".popupWindow .popupSection").text(result);
+//        }});
+
+        $.ajax({data:{getJsonData:1},url: "/admin/goods", success: function(result){
+            $(".popupWindow .popupSection").text(JSON.stringify(result));
+        }});
+
+    });
+</script>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="http://localhost/calendar/date_input.css">
+    <script src="http://localhost/calendar/date_input.js"></script>
+    <script>
+        $(document).ready(function(){
+  //          set_input_calendar(null,'inserted_date');
+        });
+    </script>
+    <meta charset="utf-8" >
+</head>
+<body>
+
+
+
+
+
+<header id="page_header">
+    <div id="big_logo_div">
+        <img src="/cloudybank/images/logo.png" >
+    </div>
+
+    <section>
+
+
+        <ul id="header_tabs_ul">
+            <%
+            var goodsTypes=arrays('public','mainMenu');
+            for (var i=0;i<goodsTypes.length;i++) {
+                %>
+            <li>
+                <a href="<%= (goodsTypes[i]['link'] != '') ? goodsTypes[i]['link'] : goodsTypes[i]['title']; %>" >
+                    <i class="<%=goodsTypes[i]['icon']; %>"></i>
+                    <label ><%= goodsTypes[i]['title']; %></label>
+                </a>
+            </li>
+            <% } %>
+
+            <div style="clear:both;"></div>
+        </ul>
+
+    </section>
+
+
+</header><!-- page_header -->
+
+
+
+
+
+<% include menu %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="page_section">
+    <header id="center_page_header">
+        <div id="inner_center_page_div">
+            <a class="left_body_heder_a">
+                <div>
+                    <i class="fa fa-money"></i>
+                    <label>  سحب النقود</label>
+                </div>
+            </a>
+            <a class="left_body_heder_a">
+                <div>
+                    <i class="fa fa-bell-o"></i>
+                    <label> عمليات الشراء(44)</label>
+                </div>
+            </a>
+            <a class="left_body_heder_a">
+                <div>
+                    <i class="fa fa-exchange"></i>
+                    <label>
+                        تحويل أموال
+                    </label>
+                </div>
+            </a>
+
+
+            <a class="left_body_heder_a right_body_heder_a ">
+                <div>
+
+                    <i class="fa fa-plus-square"></i>
+                    <label>
+                        إضافة سلعة للبيع
+                    </label>
+                </div>
+            </a>
+            <div style="clear:both;"></div>
+
+
+        </div>
+    </header>
+
+
+    <% } %>

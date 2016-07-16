@@ -1,0 +1,80 @@
+<% include ../include/header %>
+
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الدفعة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+
+    <section id="bodySection">
+
+
+
+    <% for(var i=0;i<results.rows.length;i++) { %>
+    <div class="showItemBox">
+        <header><h3>financial_movement </h3></header>
+        <section>
+
+            
+            
+            <div><label>id : </label><%=results.rows[i].id;%></div>
+            
+
+            
+            
+            <div><label>users_id : </label><%=results.rows[i].users_id;%></div>
+            
+
+            
+            
+            <div><label>in_amount : </label><%=results.rows[i].in_amount;%></div>
+            
+
+            
+            
+            <div><label>out_amount : </label><%=results.rows[i].out_amount;%></div>
+            
+
+            
+            
+            <div><label>current_balance : </label><%=results.rows[i].current_balance;%></div>
+            
+
+            
+                        <div><label>type : </label> <%=arrays('financial_movement','type',results.rows[i].type);%></div>
+            
+
+            
+            
+            <div><label>operation_id : </label><%=results.rows[i].operation_id;%></div>
+            
+
+                    </section>
+        <footer>
+            <ul>
+            <li><a href="/admin/financial_movement/<%=results.rows[i].id;%>">show</a></li>
+                <li><a href="/admin/financial_movement/<%=results.rows[i].id;%>/edit">edit</a></li>
+                <li><a href="/admin/financial_movement/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                            <li> <a href="/admin/financial_movement/<%=results.rows[i].id;%>/users">users</a></li>
+
+            
+                        </ul>
+
+        </footer>
+    </div>
+
+    <% } %>
+
+</section>
+
+
+
+<% include ../include/footer %>

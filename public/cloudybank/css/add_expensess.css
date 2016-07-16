@@ -1,0 +1,92 @@
+
+/*_______________________________center_page_section*/
+#center_page_section{
+
+padding: 0px;
+margin-top: 5px;
+margin-left: 10px;
+background-color: #E0D4E9;
+}
+
+#center_body_header,#center_body_footer_bar{ width: 90%;
+float: right;
+}
+#center_body_footer_bar{
+    margin-bottom:5px;
+}
+#save_goad_button{
+    float:left;
+    width: 10%;
+}
+/*____________________________End___center_page_section*/
+
+/*___________________________add_goad_form*/
+.form_section_header{padding-left: 0px;}
+#payment_in_out_all_div{
+    float: left;
+}
+
+#payment_in_out_all_div label{
+    float:left;
+    margin:2px 5px;
+}
+#payment_in_out_all_div label.active{
+    color: #4A80C2;
+
+    border-color: #4A80C2;
+}
+#payment_in_out_all_div label input{
+display:none;
+
+}
+#money_input{
+    float: right;
+    width: 35%;
+    margin: 0px 2%;
+    position: relative;
+    background-color: #fff;
+}
+#money_input,#reason_input,#to_user_input,#worth_date_input{
+    width: 45.5%;
+    margin: 0px 2%;
+}
+
+                                
+#papers_files_div{
+    width: 38%;
+    margin-left: 2%;
+    height: 150px;
+    float: left;
+    border: 1px solid #8DB4DB;
+}
+#pay_date_input{ width: 54%;}
+#details_textarea{ width: 54%; height: 110px; margin: 10px 2%;}
+   
+#number_repeat_unit_input,#repeat_unit_select,#margin_unit_select,#my_part_of_money_unit_select{margin:5px 0px;}
+#margin_value_input,#my_part_of_money_input{ margin-left:0;}
+.status_button input{
+    display:none;
+}
+.status_button{
+    display: inline;
+    padding:5px;
+    margin: 0px 0px 0px 5px;
+    color:#555555;
+    background-color: #eeeeee;
+    border:1px solid #cccccc;
+    cursor:pointer;
+}
+.status_button:hover i{
+    color:#0f0;
+}
+#status_button_0{margin-right: 2%;}
+
+#status_button_0.active{color:#1BBB0F; border-color:#1BBB0F; }
+#status_button_1.active{color:#00c; border-color:#00c; }
+#status_button_2.active{color:#8DB4DB; border-color:#8DB4DB; }
+#status_button_3.active{color: #B3B343; border-color:#ffff00; }
+#status_button_4.active{color:#ff0000; border-color:#ff0000; }
+/*______________________END_____add_goad_form*/
+.form_section_input_container{
+    margin: 1% 0px;
+}

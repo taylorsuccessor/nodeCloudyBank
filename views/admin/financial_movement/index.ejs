@@ -1,0 +1,260 @@
+<% include ../include/header %>
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الد�?عة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+        <section id="searchForm" class="<%=(search.searchButton != undefined)? '':'mini';%>">
+            <form action="" method="get">
+                <button type="submit" value="search"  class="searchButton" name="searchButton">search</button>
+
+
+
+
+
+
+
+                
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="id" value="<%=search.id;%>" placeholder="id" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="users_id" value="<%=search.users_id;%>" placeholder="users_id" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="in_amount" value="<%=search.in_amount;%>" placeholder="in_amount" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="out_amount" value="<%=search.out_amount;%>" placeholder="out_amount" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="current_balance" value="<%=search.current_balance;%>" placeholder="current_balance" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchOptionsContainer">
+                            <ul>
+                                <li> <label><input type="checkbox" name="type" value="-1" <%=checkboxCheck(search.type,'-1');%> ><i class="fa fa-circle"></i>All</label></li>
+
+                                                                    <li> <label ><input type="checkbox"  name="type" value="0"  <%=checkboxCheck(search.type,'0');%> >  <i class="fa fa-circle"></i>payments</label></li>
+                                                                    <li> <label ><input type="checkbox"  name="type" value="1"  <%=checkboxCheck(search.type,'1');%> >  <i class="fa fa-circle"></i>money_transfer</label></li>
+                                                                    <li> <label ><input type="checkbox"  name="type" value="2"  <%=checkboxCheck(search.type,'2');%> >  <i class="fa fa-circle"></i>charge_account</label></li>
+                                
+                            </ul>
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="operation_id" value="<%=search.operation_id;%>" placeholder="operation_id" >
+                        </div>
+
+
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </form>
+            <i class=" searchIcon fa fa-search"></i>
+        </section>
+
+
+
+
+
+
+<section id="bodySection">
+
+
+
+
+    <div class="miniMenuContainer aboveTableMiniMenu">
+        <i class="menuIcon fa fa-list"></i>
+        <div class="menuZeroContainer">
+            <ul>
+                <li><a href="/admin/financial_movement/create">add financial_movement</a></li>
+
+                                <li><a href="/admin/financial_movement/users">financial_movement users</a></li>
+                
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+   <div class="primary_table_div info" >
+<div class="table">
+
+
+   <div class="thead">
+      <div class="tr">
+
+         
+         <div class="th"><%-orderByLink('id',search);%></div>
+         
+         <div class="th"><%-orderByLink('users_id',search);%></div>
+         
+         <div class="th"><%-orderByLink('in_amount',search);%></div>
+         
+         <div class="th"><%-orderByLink('out_amount',search);%></div>
+         
+         <div class="th"><%-orderByLink('current_balance',search);%></div>
+         
+         <div class="th"><%-orderByLink('type',search);%></div>
+         
+         <div class="th"><%-orderByLink('operation_id',search);%></div>
+                  <div class="th">Actions</div>
+
+      </div>
+   </div>
+
+
+   <div class="tbody">
+
+
+      <% for(var i=0;i<results.rows.length;i++) { %>
+      <div class="tr">
+         
+       
+          <div class="td"><label>id : </label><p><%=results.rows[i].id;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>users_id : </label><p><%=results.rows[i].users_id;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>in_amount : </label><p><%=results.rows[i].in_amount;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>out_amount : </label><p><%=results.rows[i].out_amount;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>current_balance : </label><p><%=results.rows[i].current_balance;%></p></div>
+
+          
+
+         
+                 <div class="td"><label>type : </label><p> <%=arrays('financial_movement','type',results.rows[i].type);%></p></div>
+       
+
+         
+       
+          <div class="td"><label>operation_id : </label><p><%=results.rows[i].operation_id;%></p></div>
+
+          
+
+                  <div class="td">
+            <ul>
+              <li> <a href="/admin/financial_movement/<%=results.rows[i].id;%>">show</a></li>
+              <li> <a href="/admin/financial_movement/<%=results.rows[i].id;%>/edit">edit</a></li>
+               <li> <a href="/admin/financial_movement/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                              <li><a href="/admin/financial_movement/<%=results.rows[i].id;%>/users">users</a>
+               </li>
+               
+                           </ul>
+
+         </div>
+      </div>
+<% } %>
+
+
+   </div>
+
+
+
+   <div class="tfoot">
+      <div class="tr">
+         <div class="td">
+
+
+         </div>
+
+      </div>
+
+   </div>
+
+
+
+</div>
+
+       <div class="tableFooter">
+           <%-createPagination(results.total,search);%>
+       </div>
+</div>
+
+
+
+
+</section>
+
+
+
+<% include ../include/footer %>
+

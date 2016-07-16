@@ -1,0 +1,297 @@
+<% include ../include/header %>
+
+
+<section id="center_page_section">
+    <div class="centerPageHeader" id="center_body_header" >
+        أدخل معلومات الد�?عة
+
+    </div><!-- #center_body_header -->
+
+    <div class="block_body"  id="center_body_body">
+
+
+
+        <section id="searchForm" class="<%=(search.searchButton != undefined)? '':'mini';%>">
+            <form action="" method="get">
+                <button type="submit" value="search"  class="searchButton" name="searchButton">search</button>
+
+
+
+
+
+
+
+                
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="id" value="<%=search.id;%>" placeholder="id" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="users_id" value="<%=search.users_id;%>" placeholder="users_id" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="to_users_id" value="<%=search.to_users_id;%>" placeholder="to_users_id" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="amount" value="<%=search.amount;%>" placeholder="amount" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="purchases_id" value="<%=search.purchases_id;%>" placeholder="purchases_id" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="goods_id" value="<%=search.goods_id;%>" placeholder="goods_id" >
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchOptionsContainer">
+                            <ul>
+                                <li> <label><input type="checkbox" name="status" value="-1" <%=checkboxCheck(search.status,'-1');%> ><i class="fa fa-circle"></i>All</label></li>
+
+                                                                    <li> <label ><input type="checkbox"  name="status" value="0"  <%=checkboxCheck(search.status,'0');%> >  <i class="fa fa-circle"></i>pending</label></li>
+                                                                    <li> <label ><input type="checkbox"  name="status" value="1"  <%=checkboxCheck(search.status,'1');%> >  <i class="fa fa-circle"></i>delay</label></li>
+                                                                    <li> <label ><input type="checkbox"  name="status" value="2"  <%=checkboxCheck(search.status,'2');%> >  <i class="fa fa-circle"></i>paid</label></li>
+                                                                    <li> <label ><input type="checkbox"  name="status" value="3"  <%=checkboxCheck(search.status,'3');%> >  <i class="fa fa-circle"></i>completed</label></li>
+                                                                    <li> <label ><input type="checkbox"  name="status" value="4"  <%=checkboxCheck(search.status,'4');%> >  <i class="fa fa-circle"></i>canceled</label></li>
+                                
+                            </ul>
+                        </div>
+
+
+                                    
+                    
+
+                        <div class="searchInputContainer">
+                            <label for="user_name"></label>
+                            <input name="extra_info" value="<%=search.extra_info;%>" placeholder="extra_info" >
+                        </div>
+
+
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </form>
+            <i class=" searchIcon fa fa-search"></i>
+        </section>
+
+
+
+
+
+
+<section id="bodySection">
+
+
+
+
+    <div class="miniMenuContainer aboveTableMiniMenu">
+        <i class="menuIcon fa fa-list"></i>
+        <div class="menuZeroContainer">
+            <ul>
+                <li><a href="/client/payments/create">add payments</a></li>
+
+                                <li><a href="/client/payments/purchases">payments purchases</a></li>
+                                <li><a href="/client/payments/users">payments users</a></li>
+                                <li><a href="/client/payments/users">payments users</a></li>
+                                <li><a href="/client/payments/purchases">payments purchases</a></li>
+                                <li><a href="/client/payments/goods">payments goods</a></li>
+                
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+   <div class="primary_table_div info" >
+<div class="table">
+
+
+   <div class="thead">
+      <div class="tr">
+
+         
+         <div class="th"><%-orderByLink('id',search);%></div>
+         
+         <div class="th"><%-orderByLink('users_id',search);%></div>
+         
+         <div class="th"><%-orderByLink('to_users_id',search);%></div>
+         
+         <div class="th"><%-orderByLink('amount',search);%></div>
+         
+         <div class="th"><%-orderByLink('purchases_id',search);%></div>
+         
+         <div class="th"><%-orderByLink('goods_id',search);%></div>
+         
+         <div class="th"><%-orderByLink('status',search);%></div>
+         
+         <div class="th"><%-orderByLink('extra_info',search);%></div>
+                  <div class="th">Actions</div>
+
+      </div>
+   </div>
+
+
+   <div class="tbody">
+
+
+      <% for(var i=0;i<results.rows.length;i++) { %>
+      <div class="tr">
+         
+       
+          <div class="td"><label>id : </label><p><%=results.rows[i].id;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>users_id : </label><p><%=results.rows[i].users_id;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>to_users_id : </label><p><%=results.rows[i].to_users_id;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>amount : </label><p><%=results.rows[i].amount;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>purchases_id : </label><p><%=results.rows[i].purchases_id;%></p></div>
+
+          
+
+         
+       
+          <div class="td"><label>goods_id : </label><p><%=results.rows[i].goods_id;%></p></div>
+
+          
+
+         
+                 <div class="td"><label>status : </label><p> <%=arrays('payments','status',results.rows[i].status);%></p></div>
+       
+
+         
+       
+          <div class="td"><label>extra_info : </label><p><%=results.rows[i].extra_info;%></p></div>
+
+          
+
+                  <div class="td">
+            <ul>
+              <li> <a href="/client/payments/<%=results.rows[i].id;%>">show</a></li>
+              <li> <a href="/client/payments/<%=results.rows[i].id;%>/edit">edit</a></li>
+               <li> <a href="/client/payments/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                              <li><a href="/client/payments/<%=results.rows[i].id;%>/purchases">purchases</a>
+               </li>
+                              <li><a href="/client/purchases/create?payments_id=<%=results.rows[i].id;%>"> add purchases</a>
+               </li>
+               
+                              <li><a href="/client/payments/<%=results.rows[i].id;%>/users">users</a>
+               </li>
+               
+                              <li><a href="/client/payments/<%=results.rows[i].id;%>/users">users</a>
+               </li>
+               
+                              <li><a href="/client/payments/<%=results.rows[i].id;%>/purchases">purchases</a>
+               </li>
+               
+                              <li><a href="/client/payments/<%=results.rows[i].id;%>/goods">goods</a>
+               </li>
+               
+                           </ul>
+
+         </div>
+      </div>
+<% } %>
+
+
+   </div>
+
+
+
+   <div class="tfoot">
+      <div class="tr">
+         <div class="td">
+
+
+         </div>
+
+      </div>
+
+   </div>
+
+
+
+</div>
+
+       <div class="tableFooter">
+           <%-createPagination(results.total,search);%>
+       </div>
+</div>
+
+
+
+
+</section>
+
+
+
+<% include ../include/footer %>
+
