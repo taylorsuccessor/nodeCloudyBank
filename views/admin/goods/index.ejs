@@ -225,7 +225,308 @@
 
 
 
-   <div class="primary_table_div info" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <% for(var i=0;i<results.rows.length;i++) { %>
+
+
+
+
+
+
+
+    <div class="one_goad_all_div">
+        <div class="goad_header_div">
+            <a class="follow_icon_a"></a>
+            <b class="goad_name_b">جهاز نوت 3 بسعر الجملة 6G</b>
+            <a class="sitting_icon_a" ></a>
+            <label class="title_goad_price_label">300$</label>
+        </div><!-- .goad_header_div -->
+        <div class="goad_media_all_div">
+            <a class='media primary_media'>
+                <img src="media/images/mobile.jpg">
+            </a>
+            <a class='media small_media'>
+                <img src="media/images/mobile.jpg">
+            </a>
+            <a class='media small_media'>
+                <img src="media/images/mobile.jpg">
+            </a>
+            <a class='media small_media'>
+                <img src="media/images/mobile.jpg">
+            </a>
+            <a class='media small_media'>
+                <img src="media/images/mobile.jpg">
+            </a>
+            <div style="clear:both"></div>
+        </div><!-- .goad_media_all_div -->
+
+        <p class="goad_info_p">
+            أنت بس في ناس يكون من المهم أن يكون السلعة أربعة جيد من أن تكون في الحب أن تعرف في كل الناس
+        </p>
+
+        <div class="goad_acution_div">
+            <header >المزاد العلني</header>
+            <div class="last_goad_acution_price">
+                <b>
+                    100 د.أ
+                </b>
+                <div class="note_div">
+                    أعلى سعر
+                </div>
+            </div>
+            <input type="text" name="acution_input" class="acution_input " placeholder=" أكتب سعرك " value="">
+            <button class="acution_button light_primary_button" >دخول المزاد</button>
+            <div class="note_div">
+                بقية على نهاية المزاد  1 سنة و2 يوم
+            </div>
+        </div><!-- .goad_acution_div -->
+
+        <div class="parts_payment_div">
+
+            <header >البيع بالأقساط</header>
+            <div class="info_line">
+                الدفعة الأولى
+                <div class="high_lite">100د.أ</div>
+            </div>
+            <div class="info_line">
+                يدفع كل  شهر مبلغ قدره دينار
+                <div class="high_lite">100د.أ</div>
+            </div>
+            <div class="info_line">
+                ويتم دفع دفعات في الأوقات
+            </div>
+            <div class="info_line">
+                بحيث يكون المبلغ الكلي 2000 دينار
+            </div>
+            <button class="parts_payment_button primary_button" >شراء بالأقساط</button>
+        </div><!-- .parts_payment_div -->
+
+        <div class="goad_buy_div">
+            <button class="buy_button primary_button" > شراء كاش </button>
+            <button class="add_bell_button primary_button" > إضافة للفاتورة</button>
+            <div style="clear:both"></div>
+        </div><!-- .goad_acution_div -->
+
+
+        <div style="clear:both"></div>
+    </div><!-- .one_goad_all_div -->
+
+
+
+
+
+    <%=results.rows[i].id;%>
+
+        <%=results.rows[i].category;%>
+    <%=results.rows[i].users_id;%>
+    <%=results.rows[i].user_name;%>
+    <%=results.rows[i].title;%>
+    <%=results.rows[i].img;%>
+    <%=results.rows[i].description;%>
+    <%=results.rows[i].public_price;%>
+    <%=results.rows[i].last_raise;%>
+    <%=results.rows[i].installment_gain;%>
+    <%=arrays('goods','installment_unit',results.rows[i].installment_unit);%>
+    <%=results.rows[i].installment_max_repeat;%>
+    <%=results.rows[i].img_number;%>
+    <%=results.rows[i].comments_number;%>
+    <%=results.rows[i].earnest;%>
+    <%=results.rows[i].available_quantity;%>
+
+
+        <div class="td">
+            <ul>
+                <li> <a href="/admin/goods/<%=results.rows[i].id;%>">show</a></li>
+                <li> <a href="/admin/goods/<%=results.rows[i].id;%>/edit">edit</a></li>
+                <li> <a href="/admin/goods/<%=results.rows[i].id;%>/delete">delete</a></li>
+
+                <li><a href="/admin/goods/<%=results.rows[i].id;%>/users">users</a>
+                </li>
+
+                <li><a href="/admin/goods/<%=results.rows[i].id;%>/offers">offers</a>
+                </li>
+                <li><a href="/admin/offers/create?goods_id=<%=results.rows[i].id;%>"> add offers</a>
+                </li>
+
+                <li><a href="/admin/goods/<%=results.rows[i].id;%>/goods_img">goods_img</a>
+                </li>
+                <li><a href="/admin/goods_img/create?goods_id=<%=results.rows[i].id;%>"> add goods_img</a>
+                </li>
+
+                <li><a href="/admin/goods/<%=results.rows[i].id;%>/comments">comments</a>
+                </li>
+                <li><a href="/admin/comments/create?goods_id=<%=results.rows[i].id;%>"> add comments</a>
+                </li>
+
+                <li><a href="/admin/goods/<%=results.rows[i].id;%>/raises">raises</a>
+                </li>
+                <li><a href="/admin/raises/create?goods_id=<%=results.rows[i].id;%>"> add raises</a>
+                </li>
+
+                <li><a href="/admin/goods/<%=results.rows[i].id;%>/purchases">purchases</a>
+                </li>
+                <li><a href="/admin/purchases/create?goods_id=<%=results.rows[i].id;%>"> add purchases</a>
+                </li>
+
+                <li><a href="/admin/goods/<%=results.rows[i].id;%>/payments">payments</a>
+                </li>
+                <li><a href="/admin/payments/create?goods_id=<%=results.rows[i].id;%>"> add payments</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    <% } %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="primary_table_div info" >
 <div class="table">
 
 

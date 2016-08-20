@@ -7,8 +7,8 @@
 
 @import "./parts/public";
 
-//@import 'rtl.css';
-@import 'ltr.css';
+//@import 'ltr.css';
+@import 'rtl';
 //@import './add_expensess.css';
 //@import "./add_goad.css";
 //@import "login.css";
@@ -34,3 +34,9 @@
 @import "./parts/searchForm";
 @import "./parts/footerLine";
 @import "./parts/messages";
+
+
+
+
+
+@import "./shopping";

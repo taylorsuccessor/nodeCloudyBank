@@ -39,7 +39,10 @@ function showPopup(dara){
 
 
 $(document).ready(function(){
-    $('.blackShadowDiv , .popupHeader .fa-times').click(function(){hidePopup();});});
+    $('.blackShadowDiv , .popupHeader .fa-times').click(function(){hidePopup();});
+
+    hidePopup();
+});
 
 
 /*___________________________________END___popup*/

@@ -1,5 +1,4 @@
 @import url(../../css/classes.css);
-@import url(ltr.css);
 @font-face {
   font-family: 'my_font_family';
   src: url(../fonts/GE_SS_Two_Light.otf); }
@@ -20,6 +19,14 @@ a {
   text-decoration: none; }
 
 /*________________________END__reset*/
+body {
+  direction: ltr; }
+
+/*_________________________________--one good all div___*/
+.one_goad_all_div {
+  direction: rtl; }
+
+/*___________________________END______--one good all div___*/
 /*_________________________________classes_*/
 /*_header_*/
 .centerPageHeader {
@@ -777,5 +784,142 @@ body {
   border: 1px solid #006600;
   margin: 3px 0px;
   padding: 3px; }
+
+/*___________________________one_goad__*/
+.one_goad_all_div {
+  width: 50%;
+  margin: 2% 25%;
+  border: 1px solid #8DB4DB; }
+
+/*_header_*/
+.goad_header_div {
+  width: 96%;
+  padding: 3px 2%;
+  color: #ffffff;
+  text-align: right;
+  background-color: #4A80C2; }
+
+.goad_header_div .follow_icon_a:before {
+  content: "\f046";
+  /*"\f096"*/
+  font-family: FontAwesome; }
+
+.goad_header_div .goad_name_b {
+  font-weight: 100;
+  padding-right: 5px; }
+
+.goad_header_div .title_goad_price_label {
+  float: left;
+  margin-left: 5px;
+  border: 1px solid #6491C8;
+  padding: 0px 5px; }
+
+.goad_header_div .sitting_icon_a {
+  float: left; }
+
+.goad_header_div .sitting_icon_a:before {
+  content: "\f085";
+  font-family: FontAwesome; }
+
+/*_END_header_*/
+/*_media_*/
+.goad_media_all_div {
+  width: 96%;
+  padding: 2%; }
+
+.goad_media_all_div img, .goad_media_all_div video {
+  width: 100%; }
+
+.goad_media_all_div a.media {
+  display: block; }
+
+.goad_media_all_div a.primary_media {
+  width: 100%; }
+
+.goad_media_all_div a.small_media {
+  margin: 0px;
+  padding: 0px;
+  width: 25%;
+  float: right;
+  height: 100px;
+  border-top: 1px solid #fff; }
+
+.goad_media_all_div a.small_media img, .goad_media_all_div a.small_media vedio {
+  height: 100px; }
+
+/*__END__media_*/
+/*_goad_info_*/
+.goad_info_p {
+  margin: 0px;
+  padding: 5px 2%; }
+
+/*_END_goad_info_*/
+/*_goad_acution_*/
+.goad_acution_div {
+  background-color: #E0D4E9;
+  padding-bottom: 5px; }
+
+.one_goad_all_div header {
+  text-align: right;
+  padding: 2px 2%;
+  background-color: #4A80C2;
+  color: #fff; }
+
+.goad_acution_div .last_goad_acution_price {
+  float: right;
+  width: 40%;
+  height: 40px;
+  background-color: #8DB4DB;
+  text-align: center; }
+
+.goad_acution_div .last_goad_acution_price .note_div {
+  margin: 0px;
+  padding: 0px;
+  padding-right: 2%;
+  color: #ffffff; }
+
+.goad_acution_div .acution_input {
+  width: 30%;
+  float: right;
+  height: 40px; }
+
+.goad_acution_div .acution_button {
+  width: 30%;
+  height: 40px; }
+
+/*_END_goad_acution_*/
+/*____parts_payment_div_*/
+.parts_payment_div .info_line {
+  margin: 1px 2%;
+  border-bottom: 1px solid  #E0D4E9; }
+
+.parts_payment_div {
+  font-size: 14px; }
+
+.parts_payment_div .info_line .high_lite {
+  background-color: #ffffff;
+  color: #4A80C2;
+  /*float: left;padding: 1px 2%;*/
+  display: inline; }
+
+.parts_payment_div .parts_payment_button {
+  width: 99%;
+  margin: 0.5%;
+  float: left;
+  text-align: center; }
+
+/*__END__parts_payment_div_*/
+/*__buy__*/
+.goad_buy_div {
+  background-color: #E0D4E9; }
+
+.buy_button, .add_bell_button {
+  width: 49%;
+  margin: 0.5%;
+  float: left;
+  text-align: center; }
+
+/*__END_buy_*/
+/*________________________END___one_goad__*/
 
 /*# sourceMappingURL=main.css.map */
