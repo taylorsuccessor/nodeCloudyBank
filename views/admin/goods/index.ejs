@@ -357,14 +357,19 @@
     <div class="one_goad_all_div">
         <div class="goad_header_div">
             <a class="follow_icon_a"></a>
-            <b class="goad_name_b">جهاز نوت 3 بسعر الجملة 6G</b>
+            <b class="goad_name_b"><%=results.rows[i].title;%></b>
             <a class="sitting_icon_a" ></a>
-            <label class="title_goad_price_label">300$</label>
+            <label class="title_goad_price_label"><%=results.rows[i].public_price;%></label>
         </div><!-- .goad_header_div -->
         <div class="goad_media_all_div">
-            <a class='media primary_media'>
-                <img src="media/images/mobile.jpg">
+            <div class="primary_media">
+            <a class='media '>
+                <img src="media/images/<%=results.rows[i].img;%>">
+
+
             </a>
+                <a class="extra_media_number">2</a>
+            </div>
             <a class='media small_media'>
                 <img src="media/images/mobile.jpg">
             </a>
@@ -381,14 +386,14 @@
         </div><!-- .goad_media_all_div -->
 
         <p class="goad_info_p">
-            أنت بس في ناس يكون من المهم أن يكون السلعة أربعة جيد من أن تكون في الحب أن تعرف في كل الناس
+            <%=results.rows[i].description;%>
         </p>
 
         <div class="goad_acution_div">
             <header >المزاد العلني</header>
             <div class="last_goad_acution_price">
                 <b>
-                    100 د.أ
+                    <%=results.rows[i].last_raise;%>
                 </b>
                 <div class="note_div">
                     أعلى سعر
@@ -440,11 +445,11 @@
         <%=results.rows[i].category;%>
     <%=results.rows[i].users_id;%>
     <%=results.rows[i].user_name;%>
-    <%=results.rows[i].title;%>
-    <%=results.rows[i].img;%>
-    <%=results.rows[i].description;%>
-    <%=results.rows[i].public_price;%>
-    <%=results.rows[i].last_raise;%>
+
+
+
+
+
     <%=results.rows[i].installment_gain;%>
     <%=arrays('goods','installment_unit',results.rows[i].installment_unit);%>
     <%=results.rows[i].installment_max_repeat;%>
