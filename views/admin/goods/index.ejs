@@ -446,10 +446,24 @@
     <%=results.rows[i].users_id;%>
     <%=results.rows[i].user_name;%>
 
+<%
+    function calcInstallment(cashPrice,installment_gain,timePeriod){
 
+        return (cashPrice+(cashPrice*installment_gain*timePeriod))/timePeriod;
+    }
 
+    function calcTotalWithInstallment(cashPrice,installment_gain,timePeriod){
 
+        return (cashPrice+(cashPrice*installment_gain*timePeriod));
+    }
 
+%>
+
+    <% for (var j=1;j<=results.rows[i].installment_max_repeat;j++){
+    %>
+you have to pay  <%=calcInstallment(results.rows[i].public_price,results.rows[i].installment_gain,j);%> every <%=arrays('goods','installment_unit',results.rows[i].installment_unit);%> for <%=j;%> <%=arrays('goods','installment_unit',results.rows[i].installment_unit);%> where total is <%=calcTotalWithInstallment(results.rows[i].public_price,results.rows[i].installment_gain,j);%>
+    <br>
+<% } %>
     <%=results.rows[i].installment_gain;%>
     <%=arrays('goods','installment_unit',results.rows[i].installment_unit);%>
     <%=results.rows[i].installment_max_repeat;%>
