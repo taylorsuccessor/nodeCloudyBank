@@ -26,6 +26,9 @@ body {
 .one_goad_all_div {
   direction: rtl; }
 
+.installmentBuyButton {
+  float: left; }
+
 /*___________________________END______--one good all div___*/
 /*_________________________________classes_*/
 /*_header_*/
@@ -933,6 +936,20 @@ body {
   text-align: center; }
 
 /*__END_buy_*/
+.hiddenRow {
+  display: none; }
+
+.moreOffersLine {
+  font-size: 14px;
+  color: #aaa;
+  cursor: pointer; }
+
+.installmentBuyButton {
+  display: block;
+  color: #fff;
+  background-color: #4A80C2;
+  padding: 5px; }
+
 /*________________________END___one_goad__*/
 
 /*# sourceMappingURL=main.css.map */

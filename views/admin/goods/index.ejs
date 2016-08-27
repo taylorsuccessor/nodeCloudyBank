@@ -364,24 +364,13 @@
         <div class="goad_media_all_div">
             <div class="primary_media">
             <a class='media '>
-                <img src="media/images/<%=results.rows[i].img;%>">
+                <img src="/upload/images/goods/<%=results.rows[i].img;%>">
 
 
             </a>
-                <a class="extra_media_number">2</a>
+                <a class="extra_media_number">+ <%=results.rows[i].img_number;%></a>
             </div>
-            <a class='media small_media'>
-                <img src="media/images/mobile.jpg">
-            </a>
-            <a class='media small_media'>
-                <img src="media/images/mobile.jpg">
-            </a>
-            <a class='media small_media'>
-                <img src="media/images/mobile.jpg">
-            </a>
-            <a class='media small_media'>
-                <img src="media/images/mobile.jpg">
-            </a>
+
             <div style="clear:both"></div>
         </div><!-- .goad_media_all_div -->
 
@@ -413,16 +402,55 @@
                 الدفعة الأولى
                 <div class="high_lite">100د.أ</div>
             </div>
-            <div class="info_line">
-                يدفع كل  شهر مبلغ قدره دينار
-                <div class="high_lite">100د.أ</div>
+
+            <%
+            var installmentMaxRepeat=results.rows[i].installment_max_repeat;
+
+                var halfMaxRepeat=Math.floor(installmentMaxRepeat/2);
+
+            var pastHidden=false;
+            for (var j=1;j<=installmentMaxRepeat;j++){
+
+                var installment=calcInstallment(results.rows[i].public_price,results.rows[i].installment_gain,j);
+                installment= Math.ceil(installment);
+                var repeatUnit=arrays('goods','installment_unit',results.rows[i].installment_unit);
+                var total=installment*j;
+
+                var hidden="";
+                if(j>1 && (j<halfMaxRepeat || j>halfMaxRepeat) && j<installmentMaxRepeat){
+
+                    hidden="hiddenRow";
+
+
+                }
+            %>
+
+            <% if(hidden=="hiddenRow" && pastHidden==false){ %>
+            <div class="info_line moreOffersLine" onclick="showMoreOffers(this);">... عروض إضافية</div>
+            <% } %>
+
+            <div class="info_line <%=hidden;%>">
+
+                دفعات بمقدار
+                <div class="high_lite"><%=installment;%></div>
+                كل
+                <%=repeatUnit;%>
+                لمدة
+                <div class="high_lite"><%=j;%></div>
+                <%=repeatUnit;%>
+
+                بحيث يكون المبلغ الكلي
+
+                <div class="high_lite"><%=total;%></div>
+
+                <a href="#" class="installmentBuyButton">شراء</a>
             </div>
-            <div class="info_line">
-                ويتم دفع دفعات في الأوقات
-            </div>
-            <div class="info_line">
-                بحيث يكون المبلغ الكلي 2000 دينار
-            </div>
+            <%
+                if(hidden=="hiddenRow"){pastHidden=true; }else{pastHidden=false; }
+
+            } %>
+
+
             <button class="parts_payment_button primary_button" >شراء بالأقساط</button>
         </div><!-- .parts_payment_div -->
 
@@ -449,25 +477,13 @@
 <%
     function calcInstallment(cashPrice,installment_gain,timePeriod){
 
-        return (cashPrice+(cashPrice*installment_gain*timePeriod))/timePeriod;
+        return (cashPrice*1+(cashPrice*installment_gain*timePeriod))/timePeriod;
     }
 
-    function calcTotalWithInstallment(cashPrice,installment_gain,timePeriod){
-
-        return (cashPrice+(cashPrice*installment_gain*timePeriod));
-    }
 
 %>
 
-    <% for (var j=1;j<=results.rows[i].installment_max_repeat;j++){
-    %>
-you have to pay  <%=calcInstallment(results.rows[i].public_price,results.rows[i].installment_gain,j);%> every <%=arrays('goods','installment_unit',results.rows[i].installment_unit);%> for <%=j;%> <%=arrays('goods','installment_unit',results.rows[i].installment_unit);%> where total is <%=calcTotalWithInstallment(results.rows[i].public_price,results.rows[i].installment_gain,j);%>
-    <br>
-<% } %>
-    <%=results.rows[i].installment_gain;%>
-    <%=arrays('goods','installment_unit',results.rows[i].installment_unit);%>
-    <%=results.rows[i].installment_max_repeat;%>
-    <%=results.rows[i].img_number;%>
+
     <%=results.rows[i].comments_number;%>
     <%=results.rows[i].earnest;%>
     <%=results.rows[i].available_quantity;%>

@@ -99,3 +99,14 @@ $('.searchIcon').click(function(){$('#searchForm').toggleClass('mini');
 
 });
 /*_______________________________________END____search*/
+
+
+/*__________________________________________goods________*/
+
+function showMoreOffers(buttonNode){
+    var parent=$(buttonNode).parent();
+    parent.find('.hiddenRow').show();
+    parent.find(".moreOffersLine").hide();
+
+}
+/*_____________________________________END_____goods________*/
