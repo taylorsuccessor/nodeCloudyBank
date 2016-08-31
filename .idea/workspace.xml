@@ -22,16 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/include/header.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="footer.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/admin/include/footer.ejs">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,8 +47,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/cloudybank/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state vertical-scroll-proportion="-17.25">
+              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -67,22 +57,19 @@
       <file leaf-file-name="rtl.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/cloudybank/css/rtl.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9444444">
+            <state vertical-scroll-proportion="0.0">
               <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/admin/goods/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.92087543">
-              <caret line="445" column="61" selection-start-line="445" selection-start-column="61" selection-end-line="445" selection-end-column="61" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#section#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#div#1;n#section#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="431" column="29" selection-start-line="431" selection-start-column="29" selection-end-line="431" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,8 +87,46 @@
       <file leaf-file-name="shopping.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/cloudybank/css/shopping.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.777778">
-              <caret line="167" column="21" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="21" />
+            <state vertical-scroll-proportion="-1.6666666">
+              <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/goods/create.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.083333">
+              <caret line="43" column="36" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="36" />
+              <folding>
+                <element signature="n#div#0;n#fieldset#0;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#fieldset#0;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#fieldset#0;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#2;n#fieldset#0;n#form#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#fieldset#1;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#fieldset#1;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#fieldset#2;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#fieldset#2;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#fieldset#3;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#fieldset#3;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#fieldset#3;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#fieldset#4;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/cloudybank/css/parts/forms.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.75757575">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -111,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/public/cloudybank/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="955" column="0" selection-start-line="955" selection-start-column="0" selection-end-line="955" selection-end-column="0" />
+              <caret line="988" column="0" selection-start-line="988" selection-start-column="0" selection-end-line="988" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,11 +148,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/views/admin/include/header.ejs" />
-        <option value="$PROJECT_DIR$/public/cloudybank/css/main.scss" />
         <option value="$PROJECT_DIR$/public/cloudybank/js/main.js" />
-        <option value="$PROJECT_DIR$/public/cloudybank/css/shopping.scss" />
         <option value="$PROJECT_DIR$/public/cloudybank/css/rtl.scss" />
         <option value="$PROJECT_DIR$/views/admin/goods/index.ejs" />
+        <option value="$PROJECT_DIR$/public/cloudybank/css/shopping.scss" />
+        <option value="$PROJECT_DIR$/public/cloudybank/css/main.scss" />
+        <option value="$PROJECT_DIR$/views/admin/goods/create.ejs" />
+        <option value="$PROJECT_DIR$/public/cloudybank/css/parts/forms.scss" />
       </list>
     </option>
   </component>
@@ -170,7 +197,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -359,9 +386,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodeCloudyBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodeCloudyBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloudybank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,8 +423,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/views/admin/goods" />
+      <recent name="$PROJECT_DIR$/public/cloudybank/css/parts" />
       <recent name="$PROJECT_DIR$/public/cloudybank/css" />
+      <recent name="$PROJECT_DIR$/views/admin/goods" />
     </key>
   </component>
   <component name="RunManager">
@@ -428,12 +482,12 @@
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29938272" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2962963" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2901515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -464,22 +518,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/ltr.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/shopping.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="161" column="24" selection-start-line="161" selection-start-column="24" selection-end-line="161" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/cloudybank/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -534,87 +572,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#section#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#1;n#section#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/ltr.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/shopping.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="161" column="24" selection-start-line="161" selection-start-column="24" selection-end-line="161" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="941" column="0" selection-start-line="941" selection-start-column="0" selection-end-line="941" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/include/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/include/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/cloudybank/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/rtl.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/goods/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#section#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#1;n#section#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,10 +646,81 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/ltr.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/shopping.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="161" column="24" selection-start-line="161" selection-start-column="24" selection-end-line="161" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="941" column="0" selection-start-line="941" selection-start-column="0" selection-end-line="941" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/include/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/include/footer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/cloudybank/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#section#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#1;n#section#1;n#div#1;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/rtl.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/goods/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -765,10 +794,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="370" column="41" selection-start-line="370" selection-start-column="41" selection-end-line="370" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#section#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#1;n#section#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -838,26 +864,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="955" column="0" selection-start-line="955" selection-start-column="0" selection-end-line="955" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/cloudybank/css/ltr.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -872,30 +882,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/shopping.scss">
+    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/rtl.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.777778">
-          <caret line="167" column="21" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/rtl.scss">
+    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9444444">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="988" column="0" selection-start-line="988" selection-start-column="0" selection-end-line="988" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/goods/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92087543">
-          <caret line="445" column="61" selection-start-line="445" selection-start-column="61" selection-end-line="445" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="431" column="29" selection-start-line="431" selection-start-column="29" selection-end-line="431" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/shopping.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6666666">
+          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.25">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/goods/create.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.083333">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="36" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#section#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#1;n#section#1;n#div#1;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#fieldset#0;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#fieldset#0;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#fieldset#0;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#2;n#fieldset#0;n#form#0;n#div#1;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#fieldset#1;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#fieldset#1;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#fieldset#2;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#fieldset#2;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#fieldset#3;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#fieldset#3;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#fieldset#3;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#fieldset#4;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#form#0;n#div#1;n#section#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/cloudybank/css/parts/forms.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75757575">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

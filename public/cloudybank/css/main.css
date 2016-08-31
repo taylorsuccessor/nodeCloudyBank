@@ -788,6 +788,37 @@ body {
   margin: 3px 0px;
   padding: 3px; }
 
+.fullPageForm {
+  width: 80%;
+  margin: 20px 10%;
+  overflow: auto; }
+  .fullPageForm .form-group {
+    width: 50%;
+    float: left; }
+    .fullPageForm .form-group .input-group {
+      border: 1px solid #ffffff;
+      background-color: #fff;
+      margin: 1% 3% 1% 0px; }
+      .fullPageForm .form-group .input-group .input-group-addon {
+        float: left;
+        width: 10%;
+        text-align: center;
+        padding-top: 7px;
+        color: #4A80C2; }
+      .fullPageForm .form-group .input-group input {
+        width: 90%; }
+      .fullPageForm .form-group .input-group textarea {
+        width: 100%; }
+      .fullPageForm .form-group .input-group select {
+        width: 100%; }
+    .fullPageForm .form-group.fullRow {
+      width: 100%; }
+  .fullPageForm fieldset {
+    border: 1px solid #4A80C2;
+    margin: 10px 0px 10px 0px; }
+    .fullPageForm fieldset legend {
+      color: #4A80C2; }
+
 /*___________________________one_goad__*/
 .one_goad_all_div {
   width: 50%;
@@ -945,10 +976,12 @@ body {
   cursor: pointer; }
 
 .installmentBuyButton {
+  min-width: 78px;
+  text-align: center;
   display: block;
   color: #fff;
   background-color: #4A80C2;
-  padding: 5px; }
+  padding: 0px 5px; }
 
 /*________________________END___one_goad__*/
 

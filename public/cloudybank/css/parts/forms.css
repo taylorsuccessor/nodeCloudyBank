@@ -1,0 +1,16 @@
+.fullPageForm {
+  width: 80%;
+  margin: 10% 10%;
+  overflow: auto; }
+  .fullPageForm .form-group {
+    width: 50%;
+    float: left; }
+    .fullPageForm .form-group .input-group {
+      border: 1px solid #ffffff; }
+      .fullPageForm .form-group .input-group .input-group-addon {
+        float: left;
+        width: 10%; }
+      .fullPageForm .form-group .input-group input {
+        width: 90%; }
+
+/*# sourceMappingURL=forms.css.map */

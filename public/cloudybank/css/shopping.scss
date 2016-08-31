@@ -128,6 +128,7 @@ color:#ffffff;
 .parts_payment_div .info_line{
     margin: 1px 2%;
     border-bottom: 1px solid  #E0D4E9;
+
 }
 .parts_payment_div { font-size: 14px}
 .parts_payment_div .info_line .high_lite{
@@ -166,9 +167,11 @@ color:#aaa;
     cursor:pointer;
 }
 .installmentBuyButton{
+    min-width: 78px    ;
+    text-align: center;
     display:block;
     color:#fff;
     background-color:#4A80C2;
-    padding:5px;
+    padding:0px 5px;
 }
 /*________________________END___one_goad__*/
