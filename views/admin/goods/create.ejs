@@ -22,10 +22,14 @@
                       <label>category</label>
 
           <div class="input-group">
-                      <select type="select" class="form-control  input-sm" name="category"  id="category" ><% var goods_category=arrays("goods","category");%>
-    <% for(var key in goods_category){%>
-        <option value="<%=key;%>"><%=goods_category[key];%></option>
-                          <% } %> </select>
+                      <select type="select" class="form-control  input-sm" name="category"  id="category" >
+                          <%
+                          var goodsTypes=arrays('public','mainMenu');
+                          for (var i=0;i<goodsTypes.length;i++) {
+                          %>
+                         <option value="<%= goodsTypes[i]['id']; %>"><%= goodsTypes[i]['title']; %></option>
+                          <% } %>
+</select>
               </div>
                     </div><!-- category -->
 

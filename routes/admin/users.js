@@ -282,7 +282,7 @@ router.get('/:id/financial_movement',function(req,res,next){
     });
 
 });
-    
+
 router.get('/create', function(req, res, next) {
 
     respond(req,res,'admin/users/create', { values:req.query });
@@ -296,6 +296,25 @@ router.post('/create', function(req, res, next) {
             redirectRespond(req, res,'/admin/users/'+result.insertId+'/edit',result);
         }else{
             respond(req,res,'admin/users/create', { values:req.body });
+        }
+    });
+
+});
+
+
+router.get('/login', function(req, res, next) {
+
+    respond(req,res,'admin/users/login', { values:req.query });
+
+});
+
+router.post('/login', function(req, res, next) {
+
+    users.login(req.body,function(result){
+        if(result.status ==1){
+            redirectRespond(req, res,'/admin/goods',result);
+        }else{
+            respond(req,res,'admin/users/login', { values:req.body });
         }
     });
 

@@ -1,0 +1,45 @@
+<% include ../include/header %>
+
+<section id="center_page_section">
+  <div class="centerPageHeader" id="center_body_header" >
+    أدخل معلومات الدفعة
+
+  </div><!-- #center_body_header -->
+
+  <div class="block_body"  id="center_body_body">
+
+
+
+
+  <form method="post"  class="form fullPageForm">
+    <div class="form-group">
+                    <label>User Name or email </label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-user"></i>
+                      </div>
+                      
+                      <input type="input" class="form-control  input-sm" name="userName"  value="<%=values.userName;%>"  placeholder="User Name"id="userName"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->
+    <div class="form-group">
+                    <label>Password</label>
+                    <div class="input-group">
+                                
+                      <div class="input-group-addon">
+                        <i class="fa fa-fw fa-lock"></i>
+                      </div>
+                      
+                      <input type="password" class="form-control  input-sm" name="password"  value="<%=values.password;%>"  placeholder="password"id="password"  />
+                    </div><!-- /.input group -->
+                  </div><!-- /.form group -->
+
+
+    <div class="box-footer"></div>
+  <input type="submit" value="create">
+</form>
+
+
+<script>$("[data-mask]").inputmask();$("[data-mask]").inputmask();</script>
+<% include ../include/footer %>

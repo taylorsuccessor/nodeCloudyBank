@@ -10,13 +10,35 @@ function select(values,callback){
 
     var conditions={
 
-    "id": ["and","="],"name": ["and","like"],"email": ["and","like"],"phone": ["and","like"],"password": ["and","like"],"img": ["and","like"],"rank": ["and","like"]    };
+        "id": ["and","="],"name": ["and","like"],"email": ["and","like"],"phone": ["and","like"],"password": ["and","like"],"img": ["and","like"],"rank": ["and","like"]    };
 
 
-   db.select(table,conditions,values,function(result){
+    db.select(table,conditions,values,function(result){
         callback(result);
     });
 
+}
+
+function login(values,callback){
+
+
+    var conditions={
+
+        "condition_group": ["and",{
+            "name":["or","=",values.userName],
+            "email": ["or","=",values.userName],
+            "phone": ["or","=",values.userName]
+        }
+
+        ],"password":["and","=",values.password]  };
+
+
+    db.select(table,conditions,values,function(result){
+        if(result.status ==1){
+            //save user name and phone email to session
+        }
+        console.log(result); callback(result);
+    });
 }
 
 function deleteRow(id,callback){
@@ -433,3 +455,4 @@ module.exports.select=select;
 module.exports.deleteRow=deleteRow;
 module.exports.update=update;
 module.exports.insert=insert;
+module.exports.login=login;
