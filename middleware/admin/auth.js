@@ -1,1 +1,8 @@
-module.exports=function(res,req,next){console.log('I love node js middleware');next();}
+module.exports=function(req,res,next){
+
+    if(req.session.type=="admin"){
+        next();
+
+    }else{        redirectRespond(req, res,'/auth/login',{});
+    }
+    }

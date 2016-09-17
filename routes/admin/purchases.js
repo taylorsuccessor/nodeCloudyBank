@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var purchases=require('../../database/repository/admin/purchases');
+var goods=require('../../database/repository/admin/goods');
 
 router.get('/', function(req, res, next) {
 
@@ -115,7 +116,31 @@ router.get('/:id/payments',function(req,res,next){
     
 router.get('/create', function(req, res, next) {
 
-    respond(req,res,'admin/purchases/create', { values:req.query });
+
+
+    req.query.users_id=req.session.user.id;
+
+    req.query.goods_id=req.query.goods_id;
+    req.query.type=req.query.type;
+    req.query.offers_id=0;
+    req.query.status=0;
+    req.query.paymnets_id=0;
+
+    req.query.date=Date.now();//TODO does not work
+
+    goods.select({id:req.query.goods_id},function(result){
+
+        req.query.public_price=result.rows[0].public_price;
+        req.query.last_raise=result.rows[0].last_raise;
+        req.query.installment_gain=result.rows[0].installment_gain;
+        req.query.installment_unit=result.rows[0].installment_unit;
+        req.query.installment_max_repeat=result.rows[0].installment_max_repeat;
+        req.query.earnest=result.rows[0].earnest;
+        respond(req,res,'admin/purchases/create', { values:req.query });
+
+    });
+
+
 
 });
 

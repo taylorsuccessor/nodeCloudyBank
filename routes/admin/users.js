@@ -308,6 +308,15 @@ router.get('/login', function(req, res, next) {
 
 });
 
+
+function saveUserToSession(req,selectResult){
+    console.log(selectResult);
+    var user=selectResult.rows[0];
+
+    req.session.user=user;
+    req.session.type="admin";
+}
+
 router.post('/login', function(req, res, next) {
 
     users.login(req.body,function(result){
@@ -317,6 +326,15 @@ router.post('/login', function(req, res, next) {
             respond(req,res,'admin/users/login', { values:req.body });
         }
     });
+
+});
+router.get('/logout', function(req, res, next) {
+    req.session.destroy(function(err) {
+        // cannot access session here
+    })
+            respond(req,res,'admin/users/login', { values:req.body });
+
+
 
 });
 

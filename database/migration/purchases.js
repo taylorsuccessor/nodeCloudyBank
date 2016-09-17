@@ -1,4 +1,12 @@
+/*
+__________added
+fields:`type` INT
+ */
+
+
 exports.createTable=' CREATE TABLE `purchases` ( `id` INT NOT NULL AUTO_INCREMENT ,`users_id` INT  (11)  NOT NULL , `goods_id` INT  (11)  NOT NULL , `offers_id` INT  (11)  NOT NULL , `public_price` VARCHAR  (255)  NULL , `last_raise` VARCHAR  (255)  NULL , `installment_gain` VARCHAR  (255)  NULL , `installment_unit` INT  (11)  NULL , `installment_max_repeat` INT  (11)  NULL , `status` INT  (11)  NULL , `earnest` VARCHAR  (255)  NULL , `payments_id` INT  (11)  NOT NULL , PRIMARY KEY (`id`) ,FOREIGN  KEY (users_id) REFERENCES users (id) ON DELETE CASCADE  ON UPDATE CASCADE,FOREIGN  KEY (goods_id) REFERENCES goods (id) ON DELETE CASCADE  ON UPDATE CASCADE,FOREIGN  KEY (offers_id) REFERENCES offers (id) ON DELETE CASCADE  ON UPDATE CASCADE,FOREIGN  KEY (payments_id) REFERENCES payments (id) ON DELETE CASCADE  ON UPDATE CASCADE) ENGINE = InnoDB;';
+
+
 
 exports.dropTable='drop table purchases';
 

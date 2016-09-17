@@ -138,6 +138,9 @@ router.get('/create', function(req, res, next) {
 
 router.post('/create', function(req, res, next) {
 
+    req.body.user_name=req.session.displayName;
+    req.body.users_id=req.session.user.id;
+    req.body.inserted_date=Date.now();
     goods.insert(req.body,function(result){
         if(result.status ==1){
             redirectRespond(req, res,'/admin/goods/'+result.insertId+'/edit',result);

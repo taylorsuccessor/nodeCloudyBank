@@ -34,9 +34,7 @@ function login(values,callback){
 
 
     db.select(table,conditions,values,function(result){
-        if(result.status ==1){
-            //save user name and phone email to session
-        }
+
         console.log(result); callback(result);
     });
 }

@@ -3,7 +3,7 @@ var db=require('custom/helper/database');
 
 
 var table='purchases';
-var fillable=["id","users_id","goods_id","offers_id","public_price","last_raise","installment_gain","installment_unit","installment_max_repeat","status","earnest","payments_id"];
+var fillable=["id","users_id","goods_id","type","offers_id","public_price","last_raise","installment_gain","installment_unit","installment_max_repeat","status","earnest","payments_id"];
 
 function select(values,callback){
 
